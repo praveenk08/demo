@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mahaseel Deliver Dashboard</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+		<link rel="stylesheet" href="assets/css/all.min.css">
+		<link rel="stylesheet" href="assets/fonts/flaticon.css">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet" />
+		<link href="assets/css/owl.carousel.css" rel="stylesheet" />
+		<link href="assets/css/magnific-popup.css" rel="stylesheet" />
+		<link href="assets/css/nice-select.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="assets/css/icon-font.css">
+		<link href="assets/css/style.css" rel="stylesheet" />
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/owl.carousel.js"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+		<script src="assets/js/jquery.nice-select.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+		<script src="assets/js/clamp.js"></script>
+		<script src="assets/js/custom.js"></script>
+	</head>
+	<body>
+		<div class="mainWrapper">
+			<!-- Header Section -->
+			<header class="">
+				<div class="topHead">
+					<div class="container-fluid">
+						<div class="thContent">
+							<ul class="d-flex flex-wrap align-items-center">
+								<li class="myAccount">
+									<div class="d-flex align-items-center">
+										<a href="#">Login</a>
+										<span>|</span>
+										<a href="#register.html">Register</a>
+									</div>
+									<!-- <div class="accountLogin" style="display: none;"><i class="fas fa-user-circle"></i> <span>Ashish</span></div> -->
+								</li>
+								<!-- <li class="growerAccount">
+									<a href="" class="">Register Growers</a>
+								</li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="mianHead">
+					<div class="container-fluid">
+						<nav class="navbar navbar-expand-md">
+							<a class="navbar-brand" href="#" data-toggle="modal" data-target="#addVehicle"><img src="assets/images/logo.png"></a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
+								<i class="fas fa-bars"></i>
+							</button>
+							<div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+								<ul class="navbar-nav navbar-right">
+									<li class="nav-item">
+										<a class="nav-link" href="#">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">About us</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+											Products
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="#">Link 1</a>
+											<a class="dropdown-item" href="#">Link 2</a>
+											<a class="dropdown-item" href="#">Link 3</a>
+										</div>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Growers</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Contact</a>
+									</li>
+								</ul>
+							</div>
+							<!-- <div class="mhEcom d-flex">
+								<div class="mhWish"><a href="" class=""><i class="far fa-heart"></i> <span class="badge">0</span></a></div>
+								<div class="mhBag"><a href=""><i class="fas fa-shopping-bag"></i> <span class="badge">0</span></a></div>
+							</div> -->
+						</nav>
+					</div>
+				</div>
+			</header>
+			
+			<!-- Main body wrapper -->
+			<div class="mainBody">
+				<div class="msBreadcrumb">
+					<div class="container-fluid">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="#">Home</a></li>
+							<li class="breadcrumb-item active">Dashboard</li>
+						</ol>
+					</div>
+				</div>
+				<div class="userWrapper">
+					<div class="container-fluid">
+						<div class="cwContainer">
+							<div class="uwBox d-flex flex-wrap">
+								<div class="profileLt">
+									<div class="profileNav">
+										<a href="" class="profileNavToggle">ProfileMenu</a>
+										<ul class="nav nav-tabs flex-column">
+											<li class="nav-item"><a data-toggle="tab" href="#myProfile" class="nav-link active">Profile</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#editProfile" class="nav-link">Edit Profile</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#latestOrder" class="nav-link">Latest Order</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#myOrder" class="nav-link">My Order</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#cancelOrder" class="nav-link">Cancelled Order</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#dvrInquiry" class="nav-link">Inquiry</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#dvrFeedback" class="nav-link">Feedback</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#dvrChat" class="nav-link">Chat</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#checkInOut" class="nav-link">Check IN - Check Out</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="javascript:void(0);" class="nav-link">Logout</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="profileRt">
+									<div class="tab-content">
+
+										<div class="tab-pane fade" id="myProfile">
+											<div class="myProfile">
+												<div class="d-flex">
+													<div class="myImg">
+														<img src="assets/images/logo.png">
+													</div>
+													<div class="myInfo">
+														<div class="personalInfo">
+															<h5 class="infoTitle"><strong>Personal Details:</strong></h5>
+															<div class="row form-group">
+																<label class="col-sm-3">Name:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="Lisha Smith" readonly=""></div>
+															</div>
+															<div class="row form-group">
+																<label class="col-sm-3">Phone:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="+91 1234567890" readonly=""></div>
+															</div>
+															<div class="row form-group">
+																<label class="col-sm-3">Email:</label>
+																<div class="col-sm-9"><input type="email" class="form-control" name="" placeholder="example@abc.com" readonly=""></div>
+															</div>
+															<div class="row form-group">
+																<label class="col-sm-3">DOB:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="19 July, 2001" readonly=""></div>
+															</div>
+															<div class="row form-group">
+																<label class="col-sm-3">Address:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="123 fake Street, Abc Block, New Delhi - 110044" readonly=""></div>
+															</div>
+														</div>
+
+														<div class="vehicleDetail">
+															<h5 class="infoTitle"><strong>Vehicle Details:</strong></h5>
+															<div class="row form-group">
+																<label class="col-sm-3">Vehicle Number:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="DL15 - 1S - XXXX" readonly=""></div>
+															</div>
+															<div class="row form-group">
+																<label class="col-sm-3">Vehicle Type:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="Sedan" readonly=""></div>
+															</div>
+															<div class="row form-group">
+																<label class="col-sm-3">Vehicle MOdel:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="Toyota Motor" readonly=""></div>
+															</div>
+															<div class="row form-group">
+																<label class="col-sm-3">Vehicle Color:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="Light Gray" readonly=""></div>
+															</div>
+															<div class="row form-group">
+																<label class="col-sm-3">Vehicle Registration Year:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="2018" readonly=""></div>
+															</div>
+														</div>
+
+														<div class="idDetail">
+															<h5 class="infoTitle"><strong>Verify Id Details:</strong></h5>
+															<div class="row form-group">
+																<label class="col-sm-3">Id Type:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="Sedan" readonly=""></div>
+															</div>
+															<div class="row form-group">
+																<label class="col-sm-3">License number:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="XXXX-XXXX-XXXX" readonly=""></div>
+															</div>
+															<div class="row form-group">
+																<label class="col-sm-3">Insurance Date:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="15/July/2018 - 14/July/2020" readonly=""></div>
+															</div>
+															<div class="docsFile d-flex flex-wrap">
+																<div class="prImage"><img src="assets/images/logo.png" id="prImage1">
+																</div>
+																<div class="prImage"><img src="assets/images/logo.png" id="prImage2">
+																</div>
+																<div class="prImage"><img src="assets/images/logo.png" id="prImage3">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="tab-pane fade" id="editProfile">
+											<div class="editProfile">
+												<h5 class="dashTitle">Edit Profile</h5>
+												<div class="d-flex">
+													<div class="myImg">
+														<img src="assets/images/logo.png">
+														<p class="file"><input type="file" name="file" id="file1" /><label for="file1"><i class="fas fa-edit"></i></label></p>
+													</div>
+													<div class="myInfo">
+														<div class="personalInfo">
+															<h5 class="infoTitle"><strong>Personal Details:</strong></h5>
+															<div class="row form-group">
+																<label class="col-sm-3">Name:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="Lisha Smith"></div>
+															</div>
+															<div class="row form-group">
+																<label class="col-sm-3">Phone:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="+91 1234567890"></div>
+															</div>
+															<div class="row form-group">
+																<label class="col-sm-3">Email:</label>
+																<div class="col-sm-9"><input type="email" class="form-control" name="" placeholder="example@abc.com"></div>
+															</div>
+															<div class="row form-group">
+																<label class="col-sm-3">DOB:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="19 July, 2001"></div>
+															</div>
+															<div class="row form-group">
+																<label class="col-sm-3">Address:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="123 fake Street, Abc Block, New Delhi - 110044"></div>
+															</div>
+														</div>
+
+														<div class="vehicleDetail">
+															<h5 class="infoTitle"><strong>Vehicle Details:</strong></h5>
+															<div class="row form-group">
+																<label class="col-sm-3">Vehicle Number:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="DL15 - 1S - XXXX"></div>
+															</div>
+															<div class="row form-group">
+																<label class="col-sm-3">Vehicle Type:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="Sedan"></div>
+															</div>
+															<div class="row form-group">
+																<label class="col-sm-3">Vehicle MOdel:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="Toyota Motor"></div>
+															</div>
+															<div class="row form-group">
+																<label class="col-sm-3">Vehicle Color:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="Light Gray"></div>
+															</div>
+															<div class="row form-group">
+																<label class="col-sm-3">Vehicle Registration Year:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="2018"></div>
+															</div>
+														</div>
+
+														<div class="idDetail">
+															<h5 class="infoTitle"><strong>Verify Id Details:</strong></h5>
+															<div class="row form-group">
+																<label class="col-sm-3">Id Type:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="Sedan"></div>
+															</div>
+															<div class="row form-group">
+																<label class="col-sm-3">License number:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="XXXX-XXXX-XXXX"></div>
+															</div>
+															<div class="row form-group">
+																<label class="col-sm-3">Insurance Date:</label>
+																<div class="col-sm-9"><input type="text" class="form-control" name="" placeholder="15/July/2018 - 14/July/2020"></div>
+															</div>
+															<div class="docsFile d-flex flex-wrap">
+																<div class="prImage"><img src="assets/images/logo.png" id="prImage1">
+																	<p class="file"><input type="file" name="file" id="file1" /><label for="file1"><i class="fas fa-edit"></i></label></p>
+																</div>
+																<div class="prImage"><img src="assets/images/logo.png" id="prImage2">
+																	<p class="file"><input type="file" name="file" id="file2" /><label for="file2"><i class="fas fa-edit"></i></label></p>
+																</div>
+																<div class="prImage"><img src="assets/images/logo.png" id="prImage3">
+																	<p class="file"><input type="file" name="file" id="file3" /><label for="file3"><i class="fas fa-edit"></i></label></p>
+																</div>
+															</div>
+														</div>
+													</div>
+												
+												</div>
+											</div>
+										</div>
+
+										<div class="tab-pane fade" id="latestOrder">
+											<div class="latestOrder">
+												<h5 class="dashTitle">Latest Order list</h5>
+												<div class="table-responsive">
+													<table class="table table-bordered">
+														<thead class="text-nowrap">
+															<tr>
+																<th>Product Description</th>
+																<th>Start Point</th>
+																<th>End Point</th>
+																<th>Action</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>
+																	<div class="prDetail d-flex">
+																		<div class="prImg"><img src="assets/images/logo.png"></div>
+																		<div class="prDesc">
+																			<div class="prName">Woodland Agrre Farm</div>
+																			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm incid</p>
+																			<p>Qty: <span>1</span></p>
+																		</div>
+																	</div>
+																</td>
+																<td>Noida</td>
+																<td>Gurugram</td>
+																<td>
+																	<a href="" class="btn acceptBtn">Accept</a>
+																	<a href="" class="btn cancelBtn">Cancel</a>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<div class="d-flex">
+																		<div class="prImg"><img src="assets/images/logo.png"></div>
+																		<div class="prDesc">
+																			<div class="prName">Woodland Agrre Farm</div>
+																			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm incid</p>
+																			<p>Qty: <span>1</span></p>
+																		</div>
+																	</div>
+																</td>
+																<td>Noida</td>
+																<td>Gurugram</td>
+																<td>
+																	<a href="" class="btn acceptBtn">Accept</a>
+																	<a href="" class="btn cancelBtn">Cancel</a>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<div class="d-flex">
+																		<div class="prImg"><img src="assets/images/logo.png"></div>
+																		<div class="prDesc">
+																			<div class="prName">Woodland Agrre Farm</div>
+																			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm incid</p>
+																			<p>Qty: <span>1</span></p>
+																		</div>
+																	</div>
+																</td>
+																<td>Noida</td>
+																<td>Gurugram</td>
+																<td>
+																	<a href="" class="btn acceptBtn">Accept</a>
+																	<a href="" class="btn cancelBtn">Cancel</a>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+
+										<div class="tab-pane fade" id="myOrder">
+											<div class="myOrder">
+												<h5 class="dashTitle">My Order list</h5>
+												<div class="table-responsive">
+													<table class="table table-bordered">
+														<thead class="text-nowrap">
+															<tr>
+																<th>Product Description</th>
+																<th>Order ID</th>
+																<th>Amount</th>
+																<th>Status</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>
+																	<div class="prDetail d-flex">
+																		<div class="prImg"><img src="assets/images/logo.png"></div>
+																		<div class="prDesc">
+																			<div class="prName">Woodland Agrre Farm</div>
+																			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm incid</p>
+																			<p>Qty: <span>1</span></p>
+																		</div>
+																	</div>
+																</td>
+																<td>#AADF12356F</td>
+																<td><strong class="prAmount">$123</strong></td>
+																<td>
+																	<a href="" class="btn processBtn">In-process</a>
+																</td>
+															</tr>
+															<tr>
+																<td colspan="4" class="p-0">
+																	<div class="viewmore">
+																		<a href="">View More <i class="fas fa-angle-down"></i>
+																		</a>
+																	</div>
+																	<div class="viewDetail p-3">
+																		<div class="steps">
+																			<ul class="d-flex">
+																				<li>
+																					<span class="success"><i class="fas fa-check"></i></span>
+																					<p>Picked Up</p>
+																				</li>
+																				<li>
+																					<span class="success"><i class="fas fa-check"></i></span>
+																					<p>Out for Delivery</p>
+																				</li>
+																				<li>
+																					<span class="disabled"><i class="fas fa-check"></i></span>
+																					<p>Delivered</p>
+																				</li>
+																			</ul>
+																		</div>
+																		<div class="locationDetail">
+																			<div class="d-flex">
+																				<label>Pickup Detail:</label>
+																				<span>A-39, Fake Street, Abc Block, New Delhi - 110033</span>
+																			</div>
+																			<div class="d-flex">
+																				<label>Deliver Detail:</label>
+																				<span>A-39, Fake Street, Abc Block, New Delhi - 110033</span>
+																			</div>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<div class="d-flex">
+																		<div class="prImg"><img src="assets/images/logo.png"></div>
+																		<div class="prDesc">
+																			<div class="prName">Woodland Agrre Farm</div>
+																			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm incid</p>
+																			<p>Qty: <span>1</span></p>
+																		</div>
+																	</div>
+																</td>
+																<td>#AADF12356F</td>
+																<td><strong class="prAmount">$123</strong></td>
+																<td>
+																	<a href="" class="btn processBtn">Delivered</a>
+																</td>
+															</tr>
+															<tr>
+																<td colspan="4" class="p-0">
+																	<div class="viewmore"><a href="">View More <i class="fas fa-angle-down"></i></a></div>
+																	<div class="viewDetail p-3">
+																		<div class="steps">
+																			<ul class="d-flex">
+																				<li>
+																					<span class=""><i class="fas fa-check"></i></span>
+																					<p>Picked Up</p>
+																				</li>
+																				<li>
+																					<span class=""><i class="fas fa-check"></i></span>
+																					<p>Out for Delivery</p>
+																				</li>
+																				<li>
+																					<span class=""><i class="fas fa-check"></i></span>
+																					<p>Delivered</p>
+																				</li>
+																			</ul>
+																		</div>
+																		<div class="locationDetail">
+																			<div class="d-flex">
+																				<label>Pickup Detail:</label>
+																				<span>A-39, Fake Street, Abc Block, New Delhi - 110033</span>
+																			</div>
+																			<div class="d-flex">
+																				<label>Deliver Detail:</label>
+																				<span>A-39, Fake Street, Abc Block, New Delhi - 110033</span>
+																			</div>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<div class="d-flex">
+																		<div class="prImg"><img src="assets/images/logo.png"></div>
+																		<div class="prDesc">
+																			<div class="prName">Woodland Agrre Farm</div>
+																			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm incid</p>
+																			<p>Qty: <span>1</span></p>
+																		</div>
+																	</div>
+																</td>
+																<td>#AADF12356F</td>
+																<td><strong class="prAmount">$123</strong></td>
+																<td>
+																	<a href="" class="btn processBtn">Delivered</a>
+																</td>
+															</tr>
+															<tr>
+																<td colspan="4" class="p-0">
+																	<div class="viewmore"><a href="">View More <i class="fas fa-angle-down"></i></a></div>
+																	<div class="viewDetail p-3">
+																		<div class="steps">
+																			<ul class="d-flex">
+																				<li>
+																					<span class=""><i class="fas fa-check"></i></span>
+																					<p>Picked Up</p>
+																				</li>
+																				<li>
+																					<span class=""><i class="fas fa-check"></i></span>
+																					<p>Out for Delivery</p>
+																				</li>
+																				<li>
+																					<span class=""><i class="fas fa-check"></i></span>
+																					<p>Delivered</p>
+																				</li>
+																			</ul>
+																		</div>
+																		<div class="locationDetail">
+																			<div class="d-flex">
+																				<label>Pickup Detail:</label>
+																				<span>A-39, Fake Street, Abc Block, New Delhi - 110033</span>
+																			</div>
+																			<div class="d-flex">
+																				<label>Deliver Detail:</label>
+																				<span>A-39, Fake Street, Abc Block, New Delhi - 110033</span>
+																			</div>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+
+										<div class="tab-pane fade" id="cancelOrder">
+											<div class="cancelOrder">
+												<h5 class="dashTitle">Cancelled Order list</h5>
+												<div class="table-responsive">
+													<table class="table table-bordered">
+														<thead class="text-nowrap">
+															<tr>
+																<th>Product Description</th>
+																<th>Order ID</th>
+																<th>Amount</th>
+																<th>Status</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>
+																	<div class="prDetail d-flex">
+																		<div class="prImg"><img src="assets/images/logo.png"></div>
+																		<div class="prDesc">
+																			<div class="prName">Woodland Agrre Farm</div>
+																			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm incid</p>
+																			<p>Qty: <span>1</span></p>
+																		</div>
+																	</div>
+																</td>
+																<td>#AADF12356F</td>
+																<td><strong class="prAmount">$123</strong></td>
+																<td>
+																	<a href="" class="btn cancelledBtn">Cancelled</a>
+																</td>
+															</tr>
+															<tr>
+																<td colspan="4" class="p-0">
+																	<div class="viewmore">
+																		<a href="">View More <i class="fas fa-angle-down"></i>
+																		</a>
+																	</div>
+																	<div class="viewDetail p-3">
+																		<div class="locationDetail">
+																			<div class="d-flex">
+																				<label>Message:</label>
+																				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididu</span>
+																			</div>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<div class="d-flex">
+																		<div class="prImg"><img src="assets/images/logo.png"></div>
+																		<div class="prDesc">
+																			<div class="prName">Woodland Agrre Farm</div>
+																			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm incid</p>
+																			<p>Qty: <span>1</span></p>
+																		</div>
+																	</div>
+																</td>
+																<td>#AADF12356F</td>
+																<td><strong class="prAmount">$123</strong></td>
+																<td>
+																	<a href="" class="btn cancelledBtn">Cancelled</a>
+																</td>
+															</tr>
+															<tr>
+																<td colspan="4" class="p-0">
+																	<div class="viewmore"><a href="">View More <i class="fas fa-angle-down"></i></a></div>
+																	<div class="viewDetail p-3">
+																		<div class="locationDetail">
+																			<div class="d-flex">
+																				<label>Message:</label>
+																				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididu</span>
+																			</div>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<div class="d-flex">
+																		<div class="prImg"><img src="assets/images/logo.png"></div>
+																		<div class="prDesc">
+																			<div class="prName">Woodland Agrre Farm</div>
+																			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm incid</p>
+																			<p>Qty: <span>1</span></p>
+																		</div>
+																	</div>
+																</td>
+																<td>#AADF12356F</td>
+																<td><strong class="prAmount">$123</strong></td>
+																<td>
+																	<a href="" class="btn cancelledBtn">Cancelled</a>
+																</td>
+															</tr>
+															<tr>
+																<td colspan="4" class="p-0">
+																	<div class="viewmore"><a href="">View More <i class="fas fa-angle-down"></i></a></div>
+																	<div class="viewDetail p-3">
+																		<div class="locationDetail">
+																			<div class="d-flex">
+																				<label>Message:</label>
+																				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididu</span>
+																			</div>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+
+										<div class="tab-pane fade" id="dvrInquiry">
+											<div class="dvrInquiry">
+												<h5 class="dashTitle">Inquiry</h5>
+												<div class="dvrInqBox border p-2">
+													<div class="dvrInqHead d-flex align-items-center">
+														<div class="dvrInqFilter">
+															<a href="" class="btn">Received</a>
+															<a href="" class="btn">Send</a>
+														</div>
+														<div class="dvrInqResult">
+															<strong>321</strong>&nbsp;<span>Inquiries</span>
+														</div>
+													</div>
+													<div class="dvrInqBody">
+														<div class="row">
+
+															<div class="col-md-6">
+																<div class="dvrInqItem p-3">
+																	<div class="manageAction">
+																		<a href=""><i class="fas fa-ellipsis-v"></i></a>
+																		<div class="dropAction">
+																			<a href="">Reply</a>
+																		</div>
+																	</div>
+																	<div class="d-flex mb-2">
+																		<div class="prImg"><img src="assets/images/logo.png"></div>
+																		<div class="prDesc">
+																			<div class="prName">Woodland Agrre Farm</div>
+																			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm incid</p>
+																		</div>
+																	</div>
+																	<div class="dvrInqFrom">
+																		<p><span>3</span> Inquiries</p>
+																		<ul class="d-flex flex-wrap">
+																			<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																			<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																			<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-md-6">
+																<div class="dvrInqItem p-3">
+																	<div class="manageAction">
+																		<a href=""><i class="fas fa-ellipsis-v"></i></a>
+																		<div class="dropAction">
+																			<a href="">Reply</a>
+																		</div>
+																	</div>
+																	<div class="d-flex mb-2">
+																		<div class="prImg"><img src="assets/images/logo.png"></div>
+																		<div class="prDesc">
+																			<div class="prName">Woodland Agrre Farm</div>
+																			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm incid</p>
+																		</div>
+																	</div>
+																	<div class="dvrInqFrom">
+																		<p><span>3</span> Inquiries</p>
+																		<ul class="d-flex flex-wrap">
+																			<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																			<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																			<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-md-6">
+																<div class="dvrInqItem p-3">
+																	<div class="manageAction">
+																		<a href=""><i class="fas fa-ellipsis-v"></i></a>
+																		<div class="dropAction">
+																			<a href="">Reply</a>
+																		</div>
+																	</div>
+																	<div class="d-flex mb-2">
+																		<div class="prImg"><img src="assets/images/logo.png"></div>
+																		<div class="prDesc">
+																			<div class="prName">Woodland Agrre Farm</div>
+																			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm incid</p>
+																		</div>
+																	</div>
+																	<div class="dvrInqFrom">
+																		<p><span>3</span> Inquiries</p>
+																		<ul class="d-flex flex-wrap">
+																			<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																			<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																			<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-md-6">
+																<div class="dvrInqItem p-3">
+																	<div class="manageAction">
+																		<a href=""><i class="fas fa-ellipsis-v"></i></a>
+																		<div class="dropAction">
+																			<a href="">Reply</a>
+																		</div>
+																	</div>
+																	<div class="d-flex mb-2">
+																		<div class="prImg"><img src="assets/images/logo.png"></div>
+																		<div class="prDesc">
+																			<div class="prName">Woodland Agrre Farm</div>
+																			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm incid</p>
+																		</div>
+																	</div>
+																	<div class="dvrInqFrom">
+																		<p><span>3</span> Inquiries</p>
+																		<ul class="d-flex flex-wrap">
+																			<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																			<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																			<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="tab-pane fade" id="dvrFeedback">
+											<div class="dvrFeedback">
+												<h5 class="dashTitle">Feedback</h5>
+												<div class="dvrFeedBody border p-2">
+													<div class="feedSummary mb-2 text-center">
+														<h5><strong>3.2/<small>5</small></strong></h5>
+														<div class="starDisplay">
+															<span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+														</div>
+														<h4><strong>7 Ratings</strong></h4>
+													</div>
+													<ul>
+														<li class="d-flex">
+															<div class="feedImg">
+																<div><img src="assets/images/logo.png"></div>
+															</div>
+															<div class="feedDesc">
+																<div class="d-flex flex-wrap mb-2">
+																	<div class="feedName">
+																		<h5>John Smith</h5>
+																		<p>July 22, 2019 04:00 PM</p>
+																	</div>
+																	<div class="starDisplay ml-auto">
+																		<span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+																	</div>
+																</div>
+																<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+																proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+															</div>
+														</li>
+														<li class="d-flex">
+															<div class="feedImg">
+																<div><img src="assets/images/logo.png"></div>
+															</div>
+															<div class="feedDesc">
+																<div class="d-flex flex-wrap mb-2">
+																	<div class="feedName">
+																		<h5>John Smith</h5>
+																		<p>July 22, 2019 04:00 PM</p>
+																	</div>
+																	<div class="starDisplay ml-auto">
+																		<span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+																	</div>
+																</div>
+																<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+																proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+															</div>
+														</li>
+														<li class="d-flex">
+															<div class="feedImg">
+																<div><img src="assets/images/logo.png"></div>
+															</div>
+															<div class="feedDesc">
+																<div class="d-flex flex-wrap mb-2">
+																	<div class="feedName">
+																		<h5>John Smith</h5>
+																		<p>July 22, 2019 04:00 PM</p>
+																	</div>
+																	<div class="starDisplay ml-auto">
+																		<span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+																	</div>
+																</div>
+																<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+																proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="tab-pane active" id="dvrChat">
+											<div class="dvrChat">
+												<h5 class="dashTitle">Chat</h5>
+												<div class="dvrChatBody border p-3">
+													<div class="dvrChatInner">
+
+														<h6 class="text-center mb-3"><strong>Today, 12:30 PM</strong></h6>
+														<div class="d-flex flex-wrap">
+															<div class="chatReceive d-flex flex-column align-items-start">
+																<div class="chatText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiust non
+																	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+																<div class="chatText">Lorem ipsum dolor sit amet.</div>
+																<div class="chatTime">Today, 12:35 PM</div>
+															</div>
+															<div class="chatSend d-flex flex-column align-items-end">
+																<div class="chatText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiust non
+																	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+																<div class="chatText">Lorem ipsum dolor sit amet.</div>
+																<div class="chatTime">Today, 12:35 PM</div>
+															</div>
+														</div>
+
+														<h6 class="text-center mb-3"><strong>Today, 12:30 PM</strong></h6>
+														<div class="d-flex flex-wrap">
+															<div class="chatReceive d-flex flex-column align-items-start">
+																<div class="chatText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiust non
+																	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+																<div class="chatText">Lorem ipsum dolor sit amet.</div>
+																<div class="chatTime">Today, 12:35 PM</div>
+															</div>
+															<div class="chatSend d-flex flex-column align-items-end">
+																<div class="chatText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiust non
+																	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+																<div class="chatText">Lorem ipsum dolor sit amet.</div>
+																<div class="chatTime">Today, 12:35 PM</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="chatInput mt-3">
+														<div class="input-group">
+															<input type="text" class="form-control" name="" placeholder="Write your code...">
+															<div class="input-group-addon"><input type="submit" class="btn chatSubmitBtn" value="Send" name=""></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="tab-pane fade" id="checkInOut">
+											<div class="">asda...</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Subscribe section -->
+			<div class="subscribe">
+				<div class="container-fluid">
+					<div class="scContainer d-flex flex-wrap">
+						<div class="sc1">
+							<h5>Sign up to newsletter</h5>
+							<p>Register now to get updates on promotions & coupons.</p>
+						</div>
+						<div class="sc2">
+							<div class="input-group">
+								<input type="email" class="form-control" name="" placeholder="Email address">
+								<div class="input-group-addon"><span class="input-group-text">Subscribe</span></div>
+							</div>
+						</div>
+						<div class="sc3">
+							<div class="d-flex scSocial">
+								<a href=""><i class="fab fa-facebook-f"></i></a>
+								<a href=""><i class="fab fa-twitter"></i></a>
+								<a href=""><i class="fab fa-pinterest"></i></a>
+								<a href=""><i class="fab fa-linkedin-in"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Footer Section -->
+			<footer>
+				<div class="footTop">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="footContent footContact">
+									<a href="" class="footLogo"><img src="assets/images/logo.png"></a>
+									<div class="footCall d-flex">
+										<img src="assets/images/support.png">
+										<div>
+											<label>Call us toll free</label>
+											<span>(+123) 456 789 or (+123) 666 888</span>
+										</div>
+									</div>
+									<div class="footInfo">
+										<strong>Contact Info:</strong>
+										<p>1234-C, Fake Street, Abc Block, Noida - 201301</p>
+									</div>
+									<div class="footInfo">
+										<strong>Contact Info:</strong>
+										<p>info@mahaseel.com</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-6">
+								<div class="footContent footLink">
+									<h5>Products</h5>
+									<ul>
+										<li><a href="">Agro Products</a></li>
+										<li><a href="">Fruits</a></li>
+										<li><a href="">Vegetables</a></li>
+										<li><a href="">Crops</a></li>
+										<li><a href="">Flowers</a></li>
+										<li><a href="">Seeds</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 col-6">
+								<div class="footContent footLink">
+									<h5>Quick Links</h5>
+									<ul>
+										<li><a href="">About Us</a></li>
+										<li><a href="">Best Sales</a></li>
+										<li><a href="">Stores</a></li>
+										<li><a href="">Vendors</a></li>
+										<li><a href="">Products</a></li>
+										<li><a href="">Sitemap</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footMiddle">
+					<div class="container-fluid">
+						<div class="footPolicy">
+							<ul class="d-flex flex-wrap justify-content-center">
+								<li class="d-flex align-items-center">
+									<div class="mspIcon"><img src="assets/images/f-icon1.png"></div>
+									<div class="mspText">
+										<p>Over 500,000 Products</p>
+									</div>
+								</li>
+								<li class="d-flex align-items-center">
+									<div class="mspIcon"><img src="assets/images/f-icon2.png"></div>
+									<div class="mspText">
+										<p>Best Bang For Your Buck</p>
+									</div>
+								</li>
+								<li class="d-flex align-items-center">
+									<div class="mspIcon"><img src="assets/images/f-icon3.png"></div>
+									<div class="mspText">
+										<p>Professional Customer Service</p>
+									</div>
+								</li>
+								<li class="d-flex align-items-center">
+									<div class="mspIcon"><img src="assets/images/f-icon4.png"></div>
+									<div class="mspText">
+										<p>Free Or Low Cost Shipping</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="fmText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</div>
+						<div class="payMethod d-flex justify-content-center">
+							<div class="payImg"><img src="assets/images/pay-img.jpg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="footBottom">
+					<div class="container-fluid">
+						<div class="footCopy text-center">&copy; <a href="">Mahaseel</a> 2019. All Rights Reserved.</div>
+					</div>
+				</div>
+			</footer>
+			<div class="scroll-top not-visible"><i class="fas fa-angle-up"></i></div>
+
+			<!-- Add vehicle modal -->
+			<div class="modal dvrModal" id="addVehicle">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Add vehicle detail</h5>
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							<div class="form-group">
+								<label>Vehicle Registration Number</label>
+								<input type="text" class="form-control" placeholder="Dl12 - 1C - XXXX" name="">
+							</div>
+							<div class="form-group">
+								<label>Vehicle Type</label>
+								<input type="text" class="form-control" placeholder="Sedan" name="">
+							</div>
+							<div class="form-group">
+								<label>Vehicle Model</label>
+								<input type="text" class="form-control" placeholder="Toyota Motor" name="">
+							</div>
+							<div class="form-group">
+								<label>Vehicle Color</label>
+								<input type="text" class="form-control" placeholder="Light Gray" name="">
+							</div>
+							<div class="form-group">
+								<label>Vehicle Registration Year</label>
+								<input type="text" class="form-control" placeholder="2018" name="">
+							</div>
+							<p>Upload vehicle photo (Clear & bright photo, Front, Rear both side</p>
+							<div class="form-group">
+								<p class="file2">
+									<input type="file" name="file" id="file" />
+									<label for="file">Upload photos</label>
+								</p>
+							</div>
+							<div class="addContinue"><input type="submit" class="btn continueBtn" value="Add & Continue" name="" data-toggle="modal" data-target="#licenseModal"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- License modal -->
+			<div class="modal dvrModal" id="licenseModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">License</h5>
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							<div class="form-group">
+								<label>Choose your license to upload</label>
+								<input type="file" id="frontLicense" class="" placeholder="Upload Front License" name="">
+								<label for="frontLicense" class="form-control">Upload Front License</label>
+							</div>
+							<div class="form-group">
+								<input type="file" id="backLicense" class="form-control" placeholder="Upload Back License" name="">
+								<label for="backLicense" class="form-control">Upload Back License</label>
+							</div>
+							<hr/>
+							<div class="form-group">
+								<label>Proof of Insurance</label>
+								<input type="file" id="dvrInsurance" class="form-control" placeholder="Upload Insurance card" name="">
+								<label for="dvrInsurance" class="form-control">Upload Insurance card</label>
+							</div>
+							<div class="addContinue"><input type="submit" class="btn continueBtn" value="Upload & Save" name=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(function(){
+
+				/*-------- scroll to top start --------*/
+				$(window).on('scroll', function () {
+					if ($(this).scrollTop() > 600) {
+						$('.scroll-top').removeClass('not-visible');
+					} else {
+						$('.scroll-top').addClass('not-visible');
+					}
+				});
+				$('.scroll-top').on('click', function (event) {
+					$('html,body').animate({
+						scrollTop: 0
+					}, 1000);
+				});
+
+				$(".viewDetail").hide();
+				$(".viewmore > a").on("click", function(e){
+					e.preventDefault();
+					$(this).parent().next('.viewDetail').slideToggle();
+				});
+
+				$(".manageAction > a").on("click", function(e){
+					e.preventDefault();
+					$(this).next('.dropAction').toggle();
+				});
+
+				$("#licenseModal [type=file]").on("change", function(){
+				  // Name of file and placeholder
+				  var file = this.files[0].name;
+				  var dflt = $(this).attr("placeholder");
+				  if($(this).val()!=""){
+				    $(this).next().text(file);
+				  } else {
+				    $(this).next().text(dflt);
+				  }
+				});
+
+				/*-------- scroll to top end --------*/
+
+				$('.proSlide1').owlCarousel({
+					nav: true, dots: false, loop: true, autoplay: true, responsive: {
+						0: { items: 1 },
+						640: { items: 2 },
+						800: { items: 3 },
+						1000: { items: 4 }
+					}
+				});
+				$('.proSlide2').owlCarousel({
+					nav: true, dots: false, loop: true, autoplay: true, margin:30, responsive: {
+						0: { items: 1 },
+						640: { items: 2 },
+						800: { items: 3 },
+						1000: { items: 4 }
+					}
+				});
+				$('.msLogoSlide').owlCarousel({
+					nav: false, dots: false, loop: true, autoplay: true, margin:30, responsive: {
+						0: { items: 2 },
+						640: { items: 3 },
+						800: { items: 4 },
+						1000: { items: 5 }
+					}
+				});
+				$('.proSlide3').owlCarousel({
+					nav: true, dots: false, loop: true, autoplay: true, margin:30, responsive: {
+						0: { items: 1 },
+						640: { items: 2 },
+						1000: { items: 3 }
+					}
+				});
+			});
+
+			
+		</script>
+	</body>
+</html>

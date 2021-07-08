@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mahaseel Home</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+		<link rel="stylesheet" href="assets/css/all.min.css">
+		<link rel="stylesheet" href="assets/fonts/flaticon.css">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet" />
+		<link href="assets/css/owl.carousel.css" rel="stylesheet" />
+		<link href="assets/css/magnific-popup.css" rel="stylesheet" />
+		<link href="assets/css/nice-select.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="assets/css/icon-font.css">
+		<link href="assets/css/style.css" rel="stylesheet" />
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/owl.carousel.js"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+		<script src="assets/js/jquery.nice-select.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+		<script src="assets/js/clamp.js"></script>
+		<script src="assets/js/custom.js"></script>
+
+		<style>
+			.hsSearch .form-control { font-size: 14px; min-height: 42px;}
+			.selectCrop, .selectService {position: relative;}
+			.inputDropdown .dropdown-menu {width: 100%; padding: 0; margin-top: 0;}
+			.inputDropdown > .dropdown-menu .dropdown .dropdown-menu {left: 100%; top: 0; }
+			.inputDropdown .dropdown {display: flex; align-items: stretch;}
+			.inputDropdown .dropdown .nav-link {flex: 1;}
+			.inputDropdown .nav-link {font-size: 14px;}
+			.dropIcon {padding: 6px 10px; display: flex; align-items: center; justify-content: center;}
+			.inputDropdown .dropdown:hover .dropdown-menu {display: block;} 
+			.dropdown-menu.active {display: block;}
+		</style>
+	</head>
+	<body>
+		<div class="mainWrapper">
+			<!-- Header Section -->
+			<header class="header">
+				<div class="topHead">
+					<div class="container-fluid">
+						<div class="thContent">
+							<ul class="d-flex flex-wrap align-items-center">
+								<li class="myAccount">
+									<div class="d-flex align-items-center">
+										<a href="#">Login</a>
+										<span>|</span>
+										<a href="#register.html">Register</a>
+									</div>
+									<!-- <div class="accountLogin" style="display: none;"><i class="fas fa-user-circle"></i> <span>Ashish</span></div> -->
+								</li>
+								<!-- <li class="growerAccount">
+									<a href="" class="">Register Growers</a>
+								</li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="mianHead">
+					<div class="container-fluid">
+						<nav class="navbar navbar-expand-md">
+							<a class="navbar-brand" href="#"><img src="assets/images/logo.png"></a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
+								<i class="fas fa-bars"></i>
+							</button>
+							<div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+								<ul class="navbar-nav navbar-right">
+									<li class="nav-item">
+										<a class="nav-link" href="#">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">About us</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+											Products
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="#">Link 1</a>
+											<a class="dropdown-item" href="#">Link 2</a>
+											<a class="dropdown-item" href="#">Link 3</a>
+										</div>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Growers</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Contact</a>
+									</li>
+								</ul>
+							</div>
+							<!-- <div class="mhEcom d-flex">
+								<div class="mhWish"><a href="" class=""><i class="far fa-heart"></i> <span class="badge">0</span></a></div>
+								<div class="mhBag"><a href=""><i class="fas fa-shopping-bag"></i> <span class="badge">0</span></a></div>
+							</div> -->
+						</nav>
+					</div>
+				</div>
+			</header>
+			<!-- Home Slider Section -->
+			<div class="homeSlider">
+				<div class="carousel slide" id="homeSlide">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="hsImg">
+								<img src="assets/images/hsbanner2.jpg">
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="hsImg">
+								<img src="assets/images/hsbanner2.jpg">
+							</div>
+						</div>
+					</div>
+					<ul class="carousel-indicators">
+						<li data-target="#homeSlide" data-slide-to="0" class="active"></li>
+						<li data-target="#homeSlide" data-slide-to="1"></li>
+					</ul>
+				</div>
+				<div class="hsContainer">
+					<div class="container-fluid">
+						<div class="hsContent">
+							<h3>Come to the Online <strong>Agriculture Market</strong></h3>
+							<h5>Find Delivery market near by you</h5>
+						</div>
+						<div class="hsSearch">
+							<form>
+								<div class="hsFlex">
+									<div class="hs1">
+										<div class="selectCrop"><input type="text" class="form-control" placeholder="Select your crop" name="" id="change_category">
+											<div class="inputDropdown">
+												<ul class="dropdown-menu">
+													<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+													<li class="nav-item dropdown">
+														<a href="#" class="nav-link">Select your crop</a>
+														<span class="dropIcon"><i class="fa fa-angle-right"></i></span>
+														<ul class="dropdown-menu">
+															<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+															<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+															<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+															<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+														</ul>
+													</li>
+													
+													<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+													<li class="nav-item dropdown">
+														<a href="#" class="nav-link">Select your crop</a>
+														<span class="dropIcon"><i class="fa fa-angle-right"></i></span>
+														<ul class="dropdown-menu">
+																<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+																<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+																<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+																<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+															</ul>
+													</li>
+													<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+												</ul>
+											</div>
+										</div>
+										<!-- <select class="as_Select">
+											<option>Select your category</option>
+											<option>category 2</option>
+											<option>category 3</option>
+										</select> -->
+									</div>
+									<div class="hs2">
+										<div class="selectService"><input type="text" class="form-control" placeholder="Select your crop" name="" id="change_provider_section">
+											<div class="inputDropdown">
+												<ul class="dropdown-menu">
+													<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+													<li class="nav-item dropdown">
+														<a href="#" class="nav-link">Select your crop</a>
+														<span class="dropIcon"><i class="fa fa-angle-right"></i></span>
+														<ul class="dropdown-menu">
+																<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+																<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+																<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+																<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+															</ul>
+													</li>
+													
+													<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+													<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+													<li class="nav-item dropdown">
+														<a href="#" class="nav-link">Select your crop</a>
+														<span class="dropIcon"><i class="fa fa-angle-right"></i></span>
+														<ul class="dropdown-menu">
+																<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+																<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+																<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+																<li class="nav-item"><a href="#" class="nav-link">Select your crop</a></li>
+															</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<!-- <select class="as_Select">
+											<option>Select your area</option>
+											<option>Area 2</option>
+											<option>Area 3</option>
+										</select> -->
+									</div>
+									<div class="hs3">
+										<div class="input-group">
+											<div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span></div>
+											<input type="search" class="form-control" placeholder="Current location" name="">
+											<div class="input-group-append"><button class="btn"><i class="fas fa-crosshairs"></i></button></div>
+										</div>
+									</div>
+									<!-- <div class="searchCheck custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" name="" id="searchCheck">
+										<label class="custom-control-label" for="searchCheck">Search Deliveries Only</label>
+									</div> -->
+									<div class="searchSubmit"><button class="btn searchBtn">Search</button></div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Policy Section -->
+			<div class="msPolicy">
+				<div class="container-fluid">
+					<div class="msPolicyBox">
+						<ul class="d-flex flex-wrap justify-content-center">
+							<li class="d-flex align-items-baseline">
+								<div class="mspIcon"><img src="assets/images/ico_count_1.png"></div>
+								<div class="mspText">
+									<strong>19500</strong>
+									<p>Tons of harvest</p>
+								</div>
+							</li>
+							<li class="d-flex align-items-baseline">
+								<div class="mspIcon"><img src="assets/images/ico_count_2.png"></div>
+								<div class="mspText">
+									<strong>2720</strong>
+									<p>Units of Cattle</p>
+								</div>
+							</li>
+							<li class="d-flex align-items-baseline">
+								<div class="mspIcon"><img src="assets/images/ico_count_3.png"></div>
+								<div class="mspText">
+									<strong>10000</strong>
+									<p>Hectares of farm</p>
+								</div>
+							</li>
+							<li class="d-flex align-items-baseline">
+								<div class="mspIcon"><img src="assets/images/ico_count_4.png"></div>
+								<div class="mspText">
+									<strong>128</strong>
+									<p>Units of technic</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="msProWrapper">
+				<div class="container-fluid">
+					<div class="msHow text-center">
+						<div class="howHead mb-5">
+							<h3>How it works</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius.</p>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="howBlock">
+									<div class="howIcon">
+										<figure>
+											<img src="assets/images/how-to-work2.png">
+										</figure>
+									</div>
+									<div class="howText">
+										<h5>Choose a Agriculture Products</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ve.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="howBlock">
+									<div class="howIcon">
+										<figure>
+											<img src="assets/images/how-to-work3.png">
+										</figure>
+									</div>
+									<div class="howText">
+										<h5>Choose a Category</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ve.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="howBlock">
+									<div class="howIcon">
+										<figure>
+											<img src="assets/images/how-to-work1.png">
+										</figure>
+									</div>
+									<div class="howText">
+										<h5>Pickup or Delivery</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ve.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="msClient">
+						<div class="d-flex">
+							<h5>Top Vendors</h5>
+							<div class="msLogoBox">
+								<div class="owl-carousel msLogoSlide">
+									<div class="mscLogo"><img src="assets/images/logo.jpg"></div>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Download app section -->
+			<div class="appSection">
+				<div class="container-fluid">
+					<div class="appFlex">
+						<div class="row">
+							<div class="col-lg-8 offset-lg-2">
+								<div class="row">
+									<div class="col-md-4"><div class="appImg"><img src="assets/images/main-post-img-1.png"></div></div>
+									<div class="col-md-8">
+										<div class="appContent">
+											<h4>FoodBakery In Your Mobile! Get Our App</h4>
+											<p class="mb-4">Get our app, it's the fastest way to order food on the go.</p>
+											<div class="d-flex mb-4">
+												<a href="" class="mr-2"><img src="assets/images/app-img1-1.png"></a>
+												<a href=""><img src="assets/images/app-img2-1.png"></a>
+											</div>
+											<div class="sendLinkBox">
+												<form>
+													<div class="input-group">
+														<input type="email" class="form-control" name="" placeholder="Your Email">
+														<div class="input-group-append"><input type="submit" class="btn" value="Send Link"></div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Subscribe section -->
+			<div class="subscribe">
+				<div class="container-fluid">
+					<div class="scContainer d-flex flex-wrap">
+						<div class="sc1">
+							<h5>Sign up to newsletter</h5>
+							<p>Register now to get updates on promotions & coupons.</p>
+						</div>
+						<div class="sc2">
+							<div class="input-group">
+								<input type="email" class="form-control" name="" placeholder="Email address">
+								<div class="input-group-addon"><span class="input-group-text">Subscribe</span></div>
+							</div>
+						</div>
+						<div class="sc3">
+							<div class="d-flex scSocial">
+								<a href=""><i class="fab fa-facebook-f"></i></a>
+								<a href=""><i class="fab fa-twitter"></i></a>
+								<a href=""><i class="fab fa-pinterest"></i></a>
+								<a href=""><i class="fab fa-linkedin-in"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer section -->
+			<footer>
+				<div class="footTop">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="footContent footContact">
+									<a href="" class="footLogo"><img src="assets/images/logo.png"></a>
+									<div class="footCall d-flex">
+										<img src="assets/images/support.png">
+										<div>
+											<label>Call us toll free</label>
+											<span>(+123) 456 789 or (+123) 666 888</span>
+										</div>
+									</div>
+									<div class="footInfo">
+										<strong>Contact Info:</strong>
+										<p>1234-C, Fake Street, Abc Block, Noida - 201301</p>
+									</div>
+									<div class="footInfo">
+										<strong>Contact Info:</strong>
+										<p>info@mahaseel.com</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-6">
+								<div class="footContent footLink">
+									<h5>Products</h5>
+									<ul>
+										<li><a href="">Agro Products</a></li>
+										<li><a href="">Fruits</a></li>
+										<li><a href="">Vegetables</a></li>
+										<li><a href="">Crops</a></li>
+										<li><a href="">Flowers</a></li>
+										<li><a href="">Seeds</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 col-6">
+								<div class="footContent footLink">
+									<h5>Quick Links</h5>
+									<ul>
+										<li><a href="">About Us</a></li>
+										<li><a href="">Best Sales</a></li>
+										<li><a href="">Stores</a></li>
+										<li><a href="">Vendors</a></li>
+										<li><a href="">Products</a></li>
+										<li><a href="">Sitemap</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footMiddle">
+					<div class="container-fluid">
+						<div class="footPolicy">
+							<ul class="d-flex flex-wrap justify-content-center">
+								<li class="d-flex align-items-center">
+									<div class="mspIcon"><img src="assets/images/f-icon1.png"></div>
+									<div class="mspText">
+										<p>Over 500,000 Products</p>
+									</div>
+								</li>
+								<li class="d-flex align-items-center">
+									<div class="mspIcon"><img src="assets/images/f-icon2.png"></div>
+									<div class="mspText">
+										<p>Best Bang For Your Buck</p>
+									</div>
+								</li>
+								<li class="d-flex align-items-center">
+									<div class="mspIcon"><img src="assets/images/f-icon3.png"></div>
+									<div class="mspText">
+										<p>Professional Customer Service</p>
+									</div>
+								</li>
+								<li class="d-flex align-items-center">
+									<div class="mspIcon"><img src="assets/images/f-icon4.png"></div>
+									<div class="mspText">
+										<p>Free Or Low Cost Shipping</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="fmText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</div>
+						<div class="payMethod d-flex justify-content-center">
+							<div class="payImg"><img src="assets/images/pay-img.jpg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="footBottom">
+					<div class="container-fluid">
+						<div class="footCopy text-center">&copy; <a href="">Mahaseel</a> 2019. All Rights Reserved.</div>
+					</div>
+				</div>
+			</footer>
+			<div class="scroll-top not-visible"><i class="fas fa-angle-up"></i></div>
+		</div>
+		<script>
+			$(function(){
+
+				$(".selectCrop #change_category").on("focus click", function(){
+					$(this).next().children(".dropdown-menu").slideDown();
+				});
+				$(".selectCrop #change_category").on("blur", function(){
+					$(this).next().children(".dropdown-menu").slideUp();
+				});
+
+				// $(".selectCrop .dropdown-menu .dropdown").on("click", function(){
+				// 	$(".dropdown .dropdown-menu").addClass("active");
+				// });
+
+				$(".selectService #change_provider_section").on("focus", function(){
+					$(this).next().children(".dropdown-menu").slideDown();
+				});
+				$(".selectService #change_provider_section").on("blur", function(){
+					$(this).next().children(".dropdown-menu").slideUp();
+				});
+				
+
+				/*-------- scroll to top start --------*/
+				$(window).on('scroll', function () {
+					if ($(this).scrollTop() > 600) {
+						$('.scroll-top').removeClass('not-visible');
+					} else {
+						$('.scroll-top').addClass('not-visible');
+					}
+				});
+				$('.scroll-top').on('click', function (event) {
+					$('html,body').animate({
+						scrollTop: 0
+					}, 1000);
+				});
+				/*-------- scroll to top end --------*/
+
+				$('.proSlide1').owlCarousel({
+					nav: true, dots: false, loop: true, autoplay: true, responsive: {
+						0: { items: 1 },
+						640: { items: 2 },
+						800: { items: 3 },
+						1000: { items: 4 }
+					}
+				});
+				$('.proSlide2').owlCarousel({
+					nav: true, dots: false, loop: true, autoplay: true, margin:30, responsive: {
+						0: { items: 1 },
+						640: { items: 2 },
+						800: { items: 3 },
+						1000: { items: 4 }
+					}
+				});
+				$('.msLogoSlide').owlCarousel({
+					nav: false, dots: false, loop: true, autoplay: true, margin:30, responsive: {
+						0: { items: 2 },
+						640: { items: 3 },
+						800: { items: 4 },
+						1000: { items: 5 }
+					}
+				});
+				$('.proSlide3').owlCarousel({
+					nav: true, dots: false, loop: true, autoplay: true, margin:30, responsive: {
+						0: { items: 1 },
+						640: { items: 2 },
+						1000: { items: 3 }
+					}
+				});
+			});
+
+			function makeTimer() {
+
+			//	var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");	
+				var endTime = new Date("29 April 2020 9:56:00 GMT+01:00");			
+					endTime = (Date.parse(endTime) / 1000);
+
+					var now = new Date();
+					now = (Date.parse(now) / 1000);
+
+					var timeLeft = endTime - now;
+
+					var days = Math.floor(timeLeft / 86400); 
+					var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+					var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+					var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+		  
+					if (hours < "10") { hours = "0" + hours; }
+					if (minutes < "10") { minutes = "0" + minutes; }
+					if (seconds < "10") { seconds = "0" + seconds; }
+
+					$("#days").html(days + "<span>Days</span>");
+					$("#hours").html(hours + "<span>Hrs</span>");
+					$("#minutes").html(minutes + "<span>Min</span>");
+					$("#seconds").html(seconds + "<span>Sec</span>");		
+
+			}
+
+			setInterval(function() { makeTimer(); }, 1000);
+		</script>
+	</body>
+</html>

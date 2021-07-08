@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Grower Tracking</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+		<link rel="stylesheet" href="assets/css/all.min.css">
+		<link rel="stylesheet" href="assets/fonts/flaticon.css">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet" />
+		<link href="assets/css/owl.carousel.css" rel="stylesheet" />
+		<link href="assets/css/magnific-popup.css" rel="stylesheet" />
+		<link href="assets/css/nice-select.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="assets/css/icon-font.css">
+		<link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style.css" rel="stylesheet" />
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="assets/js/owl.carousel.js"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+		<script src="assets/js/jquery.nice-select.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+		<script src="assets/js/clamp.js"></script>
+		<script src="assets/js/custom.js"></script>
+	</head>
+	<body>
+		<div class="mainWrapper">
+			<!-- Header Section -->
+			<header class="">
+				<div class="topHead">
+					<div class="container-fluid">
+						<div class="thContent">
+							<ul class="d-flex flex-wrap align-items-center">
+								<li class="myAccount">
+									<div class="d-flex align-items-center">
+										<a href="#">Login</a>
+										<span>|</span>
+										<a href="#register.html">Register</a>
+									</div>
+									<!-- <div class="accountLogin" style="display: none;"><i class="fas fa-user-circle"></i> <span>Ashish</span></div> -->
+								</li>
+								<!-- <li class="growerAccount">
+									<a href="" class="">Register Growers</a>
+								</li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="mianHead">
+					<div class="container-fluid">
+						<nav class="navbar navbar-expand-md">
+							<a class="navbar-brand" href="#"><img src="assets/images/logo.png"></a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
+								<i class="fas fa-bars"></i>
+							</button>
+							<div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+								<ul class="navbar-nav navbar-right">
+									<li class="nav-item">
+										<a class="nav-link" href="#">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">About us</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+											Products
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="#">Link 1</a>
+											<a class="dropdown-item" href="#">Link 2</a>
+											<a class="dropdown-item" href="#">Link 3</a>
+										</div>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Growers</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Contact</a>
+									</li>
+								</ul>
+							</div>
+							<!-- <div class="mhEcom d-flex">
+								<div class="mhWish"><a href="" class=""><i class="far fa-heart"></i> <span class="badge">0</span></a></div>
+								<div class="mhBag"><a href=""><i class="fas fa-shopping-bag"></i> <span class="badge">0</span></a></div>
+							</div> -->
+						</nav>
+					</div>
+				</div>
+			</header>
+			
+			<!-- Main body wrapper -->
+			<div class="mainBody">
+				<div class="msBreadcrumb">
+					<div class="container-fluid">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="#">Home</a></li>
+							<li class="breadcrumb-item active">Dashboard</li>
+						</ol>
+					</div>
+				</div>
+				<div class="userWrapper">
+					<div class="container-fluid">
+						<div class="cwContainer">
+							<div class="uwBox d-flex flex-wrap">
+								<div class="profileLt">
+									<div class="profileNav">
+										<a href="" class="profileNavToggle">ProfileMenu</a>
+										<ul class="nav nav-tabs flex-column">
+											<li class="nav-item"><a data-toggle="tab" href="#myProfile" class="nav-link active">Profile</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#editProfile" class="nav-link">Edit Profile</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#gwrAddItem" class="nav-link">Add Items</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#gwrFeedback" class="nav-link">Feedback</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#gwrHelp" class="nav-link">Help</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#gwrInquiry" class="nav-link">Inquiries</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#gwrMenu" class="nav-link">Menu</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#gwrPolicy" class="nav-link">Legal Privacy Policy</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#" class="nav-link">Referral</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="javascript:void(0);" class="nav-link">Logout</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="profileRt">
+									
+									<div class="gwrorderTrack">
+										<div class="gwrHead"><h5 class="dashTitle">Order Tracking</h5></div>
+										<div class="gwrOrdTrack">
+											<div class="gwrOrdNum">Order Tracking : <strong>65423153</strong></div>
+											<div class="trackInfo d-flex flex-wrap">
+												<div class="trackVia">
+													<span>Shipped Via</span>
+													<h5>BlueDart</h5>
+												</div>
+												<div class="trackStatus">
+													<span>Status</span>
+													<h5>In Transit</h5>
+												</div>
+												<div class="trackExpect">
+													<span>Expected</span>
+													<h5>Friday, 21 July 2019</h5>
+												</div>
+											</div>
+											<ul class="trackStep d-flex">
+												<li class="">
+													<div class="trackIcon sucess"><i class="fas fa-shopping-cart"></i></div>
+													<div class="trackText">
+														<h6>Order Placed</h6>
+														<span>We recieved your order</span>
+													</div>
+												</li>
+												<li class="">
+													<div class="trackIcon sucess"><i class="fas fa-check"></i></div>
+													<div class="trackText">
+														<h6>Order Confirmed</h6>
+														<span>Your order has been confirmed</span>
+													</div>
+												</li>
+												<li class="">
+													<div class="trackIcon inProcess"><i class="fas fa-file-alt"></i></div>
+													<div class="trackText">
+														<h6>Order Processed</h6>
+														<span>We are preparing your order</span>
+													</div>
+												</li>
+												<li>
+													<div class="trackIcon"><i class="fas fa-shipping-fast"></i></div>
+													<div class="trackText">
+														<h6>Order Delivered</h6>
+														<span>Order has been delievered</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Subscribe section -->
+			<div class="subscribe">
+				<div class="container-fluid">
+					<div class="scContainer d-flex flex-wrap">
+						<div class="sc1">
+							<h5>Sign up to newsletter</h5>
+							<p>Register now to get updates on promotions & coupons.</p>
+						</div>
+						<div class="sc2">
+							<div class="input-group">
+								<input type="email" class="form-control" name="" placeholder="Email address">
+								<div class="input-group-addon"><span class="input-group-text">Subscribe</span></div>
+							</div>
+						</div>
+						<div class="sc3">
+							<div class="d-flex scSocial">
+								<a href=""><i class="fab fa-facebook-f"></i></a>
+								<a href=""><i class="fab fa-twitter"></i></a>
+								<a href=""><i class="fab fa-pinterest"></i></a>
+								<a href=""><i class="fab fa-linkedin-in"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Footer Section -->
+			<footer>
+				<div class="footTop">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="footContent footContact">
+									<a href="" class="footLogo"><img src="assets/images/logo.png"></a>
+									<div class="footCall d-flex">
+										<img src="assets/images/support.png">
+										<div>
+											<label>Call us toll free</label>
+											<span>(+123) 456 789 or (+123) 666 888</span>
+										</div>
+									</div>
+									<div class="footInfo">
+										<strong>Contact Info:</strong>
+										<p>1234-C, Fake Street, Abc Block, Noida - 201301</p>
+									</div>
+									<div class="footInfo">
+										<strong>Contact Info:</strong>
+										<p>info@mahaseel.com</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-6">
+								<div class="footContent footLink">
+									<h5>Products</h5>
+									<ul>
+										<li><a href="">Agro Products</a></li>
+										<li><a href="">Fruits</a></li>
+										<li><a href="">Vegetables</a></li>
+										<li><a href="">Crops</a></li>
+										<li><a href="">Flowers</a></li>
+										<li><a href="">Seeds</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 col-6">
+								<div class="footContent footLink">
+									<h5>Quick Links</h5>
+									<ul>
+										<li><a href="">About Us</a></li>
+										<li><a href="">Best Sales</a></li>
+										<li><a href="">Stores</a></li>
+										<li><a href="">Vendors</a></li>
+										<li><a href="">Products</a></li>
+										<li><a href="">Sitemap</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footMiddle">
+					<div class="container-fluid">
+						<div class="footPolicy">
+							<ul class="d-flex flex-wrap justify-content-center">
+								<li class="d-flex align-items-center">
+									<div class="mspIcon"><img src="assets/images/f-icon1.png"></div>
+									<div class="mspText">
+										<p>Over 500,000 Products</p>
+									</div>
+								</li>
+								<li class="d-flex align-items-center">
+									<div class="mspIcon"><img src="assets/images/f-icon2.png"></div>
+									<div class="mspText">
+										<p>Best Bang For Your Buck</p>
+									</div>
+								</li>
+								<li class="d-flex align-items-center">
+									<div class="mspIcon"><img src="assets/images/f-icon3.png"></div>
+									<div class="mspText">
+										<p>Professional Customer Service</p>
+									</div>
+								</li>
+								<li class="d-flex align-items-center">
+									<div class="mspIcon"><img src="assets/images/f-icon4.png"></div>
+									<div class="mspText">
+										<p>Free Or Low Cost Shipping</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="fmText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</div>
+						<div class="payMethod d-flex justify-content-center">
+							<div class="payImg"><img src="assets/images/pay-img.jpg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="footBottom">
+					<div class="container-fluid">
+						<div class="footCopy text-center">&copy; <a href="">Mahaseel</a> 2019. All Rights Reserved.</div>
+					</div>
+				</div>
+			</footer>
+			<div class="scroll-top not-visible"><i class="fas fa-angle-up"></i></div>
+		</div>
+		<script>
+			$(function(){
+
+				/*-------- scroll to top start --------*/
+				$(window).on('scroll', function () {
+					if ($(this).scrollTop() > 600) {
+						$('.scroll-top').removeClass('not-visible');
+					} else {
+						$('.scroll-top').addClass('not-visible');
+					}
+				});
+				$('.scroll-top').on('click', function (event) {
+					$('html,body').animate({
+						scrollTop: 0
+					}, 1000);
+				});
+				/*-------- scroll to top end --------*/
+
+				$('#maturityDate').datepicker();
+
+				$('.proSlide1').owlCarousel({
+					nav: true, dots: false, loop: true, autoplay: true, responsive: {
+						0: { items: 1 },
+						640: { items: 2 },
+						800: { items: 3 },
+						1000: { items: 4 }
+					}
+				});
+				$('.proSlide2').owlCarousel({
+					nav: true, dots: false, loop: true, autoplay: true, margin:30, responsive: {
+						0: { items: 1 },
+						640: { items: 2 },
+						800: { items: 3 },
+						1000: { items: 4 }
+					}
+				});
+				$('.msLogoSlide').owlCarousel({
+					nav: false, dots: false, loop: true, autoplay: true, margin:30, responsive: {
+						0: { items: 2 },
+						640: { items: 3 },
+						800: { items: 4 },
+						1000: { items: 5 }
+					}
+				});
+				$('.proSlide3').owlCarousel({
+					nav: true, dots: false, loop: true, autoplay: true, margin:30, responsive: {
+						0: { items: 1 },
+						640: { items: 2 },
+						1000: { items: 3 }
+					}
+				});
+			});
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mahaseel Home</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+		<link rel="stylesheet" href="assets/css/all.min.css">
+		<link rel="stylesheet" href="assets/fonts/flaticon.css">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet" />
+		<link href="assets/css/owl.carousel.css" rel="stylesheet" />
+		<link href="assets/css/magnific-popup.css" rel="stylesheet" />
+		<link href="assets/css/nice-select.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="assets/css/icon-font.css">
+		<link href="assets/css/style.css" rel="stylesheet" />
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/owl.carousel.js"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+		<script src="assets/js/jquery.nice-select.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+		<script src="assets/js/clamp.js"></script>
+		<script src="assets/js/custom.js"></script>
+	</head>
+	<body>
+		<div class="mainWrapper">
+			<header>
+				<div class="topHead">
+					<div class="container-fluid">
+						<div class="thContent">
+							<ul class="d-flex flex-wrap align-items-center">
+								<li>Welcome to Mahaseel!</li>
+								<li class="myAccount">
+									<a href="#">My account <i class="fas fa-angle-down"></i></a>
+									<div class="thDrop" style="display: none;">
+										<a href="" class="btn btn-warning">Login</a>
+										<a href="" class="btn btn-default">Signup</a>
+									</div>
+								</li>
+								<li class="thCurrency">
+									<select class="as_Select">
+										<option>$ USD</option>
+										<option>$ USD</option>
+										<option>$ USD</option>
+									</select>
+								</li>
+								<li class="thLang">
+									<select class="as_Select">
+										<option>English</option>
+										<option>Hindi</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="mianHead">
+					<div class="container-fluid">
+						<nav class="navbar navbar-expand-md">
+							<a class="navbar-brand" href="#"><img src="assets/images/logo.jpg"></a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
+								<i class="fas fa-bars"></i>
+							</button>
+							<div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+								<ul class="navbar-nav navbar-right">
+									<li class="nav-item">
+										<a class="nav-link" href="#">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">About us</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+											Products
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="#">Link 1</a>
+											<a class="dropdown-item" href="#">Link 2</a>
+											<a class="dropdown-item" href="#">Link 3</a>
+										</div>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Offers</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Vendor</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Contact</a>
+									</li>
+								</ul>
+							</div>
+							<div class="mhEcom d-flex">
+								<div class="mhWish"><a href="" class=""><i class="far fa-heart"></i> <span class="badge">0</span></a></div>
+								<div class="mhBag"><a href=""><i class="fas fa-shopping-bag"></i> <span class="badge">0</span></a></div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<div class="homeSlider">
+				<div class="carousel slide" id="homeSlide">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="hsImg">
+								<img src="assets/images/hsbanner.jpg">
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="hsImg">
+								<img src="assets/images/hsbanner.jpg">
+							</div>
+						</div>
+					</div>
+					<ul class="carousel-indicators">
+						<li data-target="#homeSlide" data-slide-to="0" class="active"></li>
+						<li data-target="#homeSlide" data-slide-to="1"></li>
+					</ul>
+				</div>
+				<div class="hsContainer">
+					<div class="container-fluid">
+						<div class="hsContent">
+							<h3>Come to the Online <strong>Agriculture Market</strong></h3>
+							<h5>Find Delivery market near by you</h5>
+						</div>
+						<div class="hsSearch">
+							<form>
+								<div class="hsFlex">
+									<div class="searchCity">
+										<select class="form-control">
+											<option>City 1</option>
+											<option>City 2</option>
+											<option>City 3</option>
+										</select>
+									</div>
+									<div class="searchArea">
+										<select class="form-control">
+											<option>Area 1</option>
+											<option>Area 2</option>
+											<option>Area 3</option>
+										</select>
+									</div>
+									<div class="searchCategory">
+										<select class="form-control">
+											<option>Category 1</option>
+											<option>Category 2</option>
+											<option>Category 3</option>
+										</select>
+									</div>
+									<div class="searchCheck custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" name="" id="searchCheck">
+										<label class="custom-control-label" for="searchCheck">Search Deliveries Only</label>
+									</div>
+									<div class="searchSubmit"><button class="btn searchBtn">Search</button></div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="msPolicy">
+				<div class="container-fluid">
+					<div class="msPolicyBox">
+						<ul class="d-flex flex-wrap">
+							<li class="d-flex align-items-center">
+								<div class="mspIcon"><img src="assets/images/icon1.png"></div>
+								<div class="mspText">
+									<strong>Free Shipping</strong>
+									<p>Free shipping on all US order or order above $200</p>
+								</div>
+							</li>
+							<li class="d-flex align-items-center">
+								<div class="mspIcon"><img src="assets/images/icon2.png"></div>
+								<div class="mspText">
+									<strong>Support 24/7</strong>
+									<p>Contact us 24 hours a day, 7 days a week</p>
+								</div>
+							</li>
+							<li class="d-flex align-items-center">
+								<div class="mspIcon"><img src="assets/images/icon3.png"></div>
+								<div class="mspText">
+									<strong>60-Day Returns</strong>
+									<p>If you dont't love it, you have 60 days to return it.</p>
+								</div>
+							</li>
+							<li class="d-flex align-items-center">
+								<div class="mspIcon"><img src="assets/images/icon4.png"></div>
+								<div class="mspText">
+									<strong>100% Payment Secure</strong>
+									<p>We ensure secure payment with PEV</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="msFeature">
+				<div class="container-fluid">
+					<div class="msfFlex d-flex flex-wrap">
+						<div class="msfLt">
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="msfBox">
+										<div class="msfCat">New Product</div>
+										<div class="msfImg"><img src="assets/images/prd1.jpg"></div>
+										<div class="msfText">
+											<div class="msfPrice"><del>$60.00</del> <span>$50.00</span></div>
+											<div class="msfTag">
+												<div class="msfLabel new">New</div>
+												<div class="msfLabel discount">-5%</div>
+											</div>
+											<div class="starDisplay">
+												<span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+											</div>
+											<div class="prName"><a href=""><strong>Product name here</strong></a></div>
+										</div>
+										<a href="" class="seeAll">See all new arrivals <i class="fas fa-caret-right"></i></a>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="msfBox">
+										<div class="msfCat">New Product</div>
+										<div class="msfImg"><img src="assets/images/prd1.jpg"></div>
+										<div class="msfText">
+											<div class="msfPrice"><del>$60.00</del> <span>$50.00</span></div>
+											<div class="msfTag">
+												<div class="msfLabel new">New</div>
+												<div class="msfLabel discount">-5%</div>
+											</div>
+											<div class="starDisplay">
+												<span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+											</div>
+											<div class="prName"><a href=""><strong>Product name here</strong></a></div>
+										</div>
+										<a href="" class="seeAll">See all new arrivals <i class="fas fa-caret-right"></i></a>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="msfBox">
+										<div class="msfCat">New Product</div>
+										<div class="msfImg"><img src="assets/images/prd1.jpg"></div>
+										<div class="msfText">
+											<div class="msfPrice"><del>$60.00</del> <span>$50.00</span></div>
+											<div class="msfTag">
+												<div class="msfLabel new">New</div>
+												<div class="msfLabel discount">-5%</div>
+											</div>
+											<div class="starDisplay">
+												<span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+											</div>
+											<div class="prName"><a href=""><strong>Product name here</strong></a></div>
+										</div>
+										<a href="" class="seeAll">See all new arrivals <i class="fas fa-caret-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="msfAd">
+							<div class="d-flex">
+								<a href="" class="ad1"><img src="assets/images/ad1.jpg"></a>
+								<a href="" class="ad2"><img src="assets/images/ad2.jpg"></a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="msDeal">
+				<div class="container-fluid">
+					<div class="msDeal-day">
+						<h5>Deal of the days</h5>
+						<div class="msdItem">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="msdImg"><a href=""><img src="assets/images/prd1.jpg"></a></div>
+								</div>
+								<div class="col-sm-6">
+									<div class="msdText">
+										<div class="msdCat text-uppercase mb-3"><strong>Kazi Farm</strong></div>
+										<div class="msdName mb-3"><a href=""><strong>Fresh While Caught Swordfish Steaks Abound Fresh</strong></a></div>
+										<div class="starDisplay">
+											<span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+										</div>
+										<div class="msfPrice mt-2 mb-2"><del>$60.00</del> <span>$50.00</span></div>
+										<div class="hurry mt-3 mb-3">Hurry Up! Offers ends in:</div>
+										<div id="timer" class="d-flex">
+											<div id="days"></div>
+											<div id="hours"></div>
+											<div id="minutes"></div>
+											<div id="seconds"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row msdAdBox">
+							<div class="col-sm-4">
+								<div class="msdAd"><a href=""><img src="assets/images/m-ad1.jpg"></a></div>
+							</div>
+							<div class="col-sm-4">
+								<div class="msdAd"><a href=""><img src="assets/images/m-ad2.jpg"></a></div>
+							</div>
+							<div class="col-sm-4">
+								<div class="msdAd"><a href=""><img src="assets/images/m-ad3.jpg"></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="msProWrapper">
+				<div class="container-fluid">
+					<div class="msProBox">
+						<div class="msProHead d-flex flex-wrap">
+							<h5>Fruits & Vegetables</h5>
+							<a href="" class="proAll">All Products</a>
+						</div>
+						<div class="msProBody">
+							<div class="owl-carousel proSlide1" id="">
+								<div class="msProItem">
+									<div class="msProImg">
+										<div class="msfTag">
+											<div class="msfLabel new">New</div>
+											<div class="msfLabel discount">-5%</div>
+										</div>
+										<a href=""><img src="assets/images/prd1.jpg"></a>
+									</div>
+									<div class="msProText">
+										<div class="prName"><a href=""><strong>Product name here</strong></a></div>
+										<div class="starDisplay">
+											<span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+										</div>
+										<div class="msfPrice"><del>$60.00</del> <span>$50.00</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="msProAd"><a href=""><img src="assets/images/f-ad1.jpg"></a></div>
+					<div class="msProBox">
+						<div class="msProHead d-flex flex-wrap">
+							<h5>Our Categories</h5>
+							<!-- <a href="" class="proAll">All Products</a> -->
+						</div>
+						<div class="msProCat">
+							<div class="owl-carousel proSlide2" id="">
+								<div class="proItem2">
+									<div class="proCatItem">
+										<div class="proCatImg"><a href=""><img src="assets/images/prd1.jpg"></a></div>
+										<div class="proCatText">
+											<h6><a href="">Fresh Juice</a></h6>
+											<p>10 Products</p>
+										</div>
+									</div>
+									<div class="proCatItem">
+										<div class="proCatImg"><a href=""><img src="assets/images/ad1.jpg"></a></div>
+										<div class="proCatText">
+											<h6><a href="">Fresh Juice</a></h6>
+											<p>10 Products</p>
+										</div>
+									</div>
+								</div>
+								<div class="proItem2">
+									<div class="proCatItem">
+										<div class="proCatImg"><a href=""><img src="assets/images/ad1.jpg"></a></div>
+										<div class="proCatText">
+											<h6><a href="">Fresh Juice</a></h6>
+											<p>10 Products</p>
+										</div>
+									</div>
+									<div class="proCatItem">
+										<div class="proCatImg"><a href=""><img src="assets/images/prd1.jpg"></a></div>
+										<div class="proCatText">
+											<h6><a href="">Fresh Juice</a></h6>
+											<p>10 Products</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="msClient">
+						<div class="d-flex">
+							<h4>Top Vendors</h4>
+							<div class="msLogoBox">
+								<div class="owl-carousel msLogoSlide">
+									<div class="mscLogo"><img src="assets/images/logo.jpg"></div>
+								</div>	
+							</div>
+						</div>
+					</div>
+					<div class="msProBox">
+						<div class="msProHead d-flex flex-wrap">
+							<h5>Our Categories</h5>
+							<!-- <a href="" class="proAll">All Products</a> -->
+						</div>
+						<div class="msProCat">
+							<div class="owl-carousel proSlide3" id="">
+								<div class="proItem2">
+									<div class="proCatItem2 d-flex">
+										<div class="proCatImg"><a href=""><img src="assets/images/prd1.jpg"></a></div>
+										<div class="proCatText">
+											<h6><a href="">Fresh Juice</a></h6>
+											<div class="starDisplay">
+												<span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+											</div>
+											<div class="msfPrice"><del>$60.00</del> <span>$50.00</span></div>
+										</div>
+									</div>
+									<div class="proCatItem2 d-flex">
+										<div class="proCatImg"><a href=""><img src="assets/images/ad1.jpg"></a></div>
+										<div class="proCatText">
+											<h6><a href="">Fresh Juice</a></h6>
+											<div class="starDisplay">
+												<span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+											</div>
+											<div class="msfPrice"><del>$60.00</del> <span>$50.00</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="proItem2">
+									<div class="proCatItem2 d-flex">
+										<div class="proCatImg"><a href=""><img src="assets/images/ad1.jpg"></a></div>
+										<div class="proCatText">
+											<h6><a href="">Fresh Juice</a></h6>
+											<div class="starDisplay">
+												<span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+											</div>
+											<div class="msfPrice"><del>$60.00</del> <span>$50.00</span></div>
+										</div>
+									</div>
+									<div class="proCatItem2 d-flex">
+										<div class="proCatImg"><a href=""><img src="assets/images/prd1.jpg"></a></div>
+										<div class="proCatText">
+											<h6><a href="">Fresh Juice</a></h6>
+											<div class="starDisplay">
+												<span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+											</div>
+											<div class="msfPrice"><del>$60.00</del> <span>$50.00</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="subscribe">
+				<div class="container-fluid">
+					<div class="scContainer d-flex flex-wrap">
+						<div class="sc1">
+							<h5>Sign up to newsletter</h5>
+							<p>Register now to get updates on promotions & coupons.</p>
+						</div>
+						<div class="sc2">
+							<div class="input-group">
+								<input type="email" class="form-control" name="" placeholder="Email address">
+								<div class="input-group-addon"><span class="input-group-text">Subscribe</span></div>
+							</div>
+						</div>
+						<div class="sc3">
+							<div class="d-flex scSocial">
+								<a href=""><i class="fab fa-facebook-f"></i></a>
+								<a href=""><i class="fab fa-twitter"></i></a>
+								<a href=""><i class="fab fa-pinterest"></i></a>
+								<a href=""><i class="fab fa-linkedin-in"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="footTop">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="footContent footContact">
+									<a href="" class="footLogo"><img src="assets/images/logo.jpg"></a>
+									<div class="footCall d-flex">
+										<img src="assets/images/support.png">
+										<div>
+											<label>Call us toll free</label>
+											<span>(+123) 456 789 or (+123) 666 888</span>
+										</div>
+									</div>
+									<div class="footInfo">
+										<strong>Contact Info:</strong>
+										<p>1234-C, Fake Street, Abc Block, Noida - 201301</p>
+									</div>
+									<div class="footInfo">
+										<strong>Contact Info:</strong>
+										<p>info@mahaseel.com</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-6">
+								<div class="footContent footLink">
+									<h5>Products</h5>
+									<ul>
+										<li><a href="">Agro Products</a></li>
+										<li><a href="">Fruits</a></li>
+										<li><a href="">Vegetables</a></li>
+										<li><a href="">Crops</a></li>
+										<li><a href="">Flowers</a></li>
+										<li><a href="">Seeds</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 col-6">
+								<div class="footContent footLink">
+									<h5>Quick Links</h5>
+									<ul>
+										<li><a href="">About Us</a></li>
+										<li><a href="">Best Sales</a></li>
+										<li><a href="">Stores</a></li>
+										<li><a href="">Vendors</a></li>
+										<li><a href="">Products</a></li>
+										<li><a href="">Sitemap</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footMiddle">
+					<div class="container-fluid">
+						<div class="footPolicy">
+							<ul class="d-flex flex-wrap justify-content-center">
+								<li class="d-flex align-items-center">
+									<div class="mspIcon"><img src="assets/images/f-icon1.png"></div>
+									<div class="mspText">
+										<p>Over 500,000 Products</p>
+									</div>
+								</li>
+								<li class="d-flex align-items-center">
+									<div class="mspIcon"><img src="assets/images/f-icon2.png"></div>
+									<div class="mspText">
+										<p>Best Bang For Your Buck</p>
+									</div>
+								</li>
+								<li class="d-flex align-items-center">
+									<div class="mspIcon"><img src="assets/images/f-icon3.png"></div>
+									<div class="mspText">
+										<p>Professional Customer Service</p>
+									</div>
+								</li>
+								<li class="d-flex align-items-center">
+									<div class="mspIcon"><img src="assets/images/f-icon4.png"></div>
+									<div class="mspText">
+										<p>Free Or Low Cost Shipping</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="fmText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</div>
+						<div class="payMethod d-flex justify-content-center">
+							<div class="payImg"><img src="assets/images/pay-img.jpg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="footBottom">
+					<div class="container-fluid">
+						<div class="footCopy text-center">&copy; <a href="">Mahaseel</a> 2019. All Rights Reserved.</div>
+					</div>
+				</div>
+			</footer>
+			<div class="scroll-top not-visible"><i class="fas fa-angle-up"></i></div>
+		</div>
+		<script>
+			$(function(){
+
+				/*-------- scroll to top start --------*/
+				$(window).on('scroll', function () {
+					if ($(this).scrollTop() > 600) {
+						$('.scroll-top').removeClass('not-visible');
+					} else {
+						$('.scroll-top').addClass('not-visible');
+					}
+				});
+				$('.scroll-top').on('click', function (event) {
+					$('html,body').animate({
+						scrollTop: 0
+					}, 1000);
+				});
+				/*-------- scroll to top end --------*/
+
+				$('.proSlide1').owlCarousel({
+					nav: true, dots: false, loop: true, autoplay: true, responsive: {
+						0: { items: 1 },
+						640: { items: 2 },
+						800: { items: 3 },
+						1000: { items: 4 }
+					}
+				});
+				$('.proSlide2').owlCarousel({
+					nav: true, dots: false, loop: true, autoplay: true, margin:30, responsive: {
+						0: { items: 1 },
+						640: { items: 2 },
+						800: { items: 3 },
+						1000: { items: 4 }
+					}
+				});
+				$('.msLogoSlide').owlCarousel({
+					nav: false, dots: false, loop: true, autoplay: true, margin:30, responsive: {
+						0: { items: 2 },
+						640: { items: 3 },
+						800: { items: 4 },
+						1000: { items: 5 }
+					}
+				});
+				$('.proSlide3').owlCarousel({
+					nav: true, dots: false, loop: true, autoplay: true, margin:30, responsive: {
+						0: { items: 1 },
+						640: { items: 2 },
+						1000: { items: 3 }
+					}
+				});
+			});
+
+			function makeTimer() {
+
+			//	var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");	
+				var endTime = new Date("29 April 2020 9:56:00 GMT+01:00");			
+					endTime = (Date.parse(endTime) / 1000);
+
+					var now = new Date();
+					now = (Date.parse(now) / 1000);
+
+					var timeLeft = endTime - now;
+
+					var days = Math.floor(timeLeft / 86400); 
+					var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+					var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+					var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+		  
+					if (hours < "10") { hours = "0" + hours; }
+					if (minutes < "10") { minutes = "0" + minutes; }
+					if (seconds < "10") { seconds = "0" + seconds; }
+
+					$("#days").html(days + "<span>Days</span>");
+					$("#hours").html(hours + "<span>Hrs</span>");
+					$("#minutes").html(minutes + "<span>Min</span>");
+					$("#seconds").html(seconds + "<span>Sec</span>");		
+
+			}
+
+			setInterval(function() { makeTimer(); }, 1000);
+		</script>
+	</body>
+</html>

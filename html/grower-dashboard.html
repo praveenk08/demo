@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mahaseel Grower Dashboard</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+		<link rel="stylesheet" href="assets/css/all.min.css">
+		<link rel="stylesheet" href="assets/fonts/flaticon.css">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet" />
+		<link href="assets/css/owl.carousel.css" rel="stylesheet" />
+		<link href="assets/css/magnific-popup.css" rel="stylesheet" />
+		<link href="assets/css/nice-select.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="assets/css/icon-font.css">
+		<link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style.css" rel="stylesheet" />
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="assets/js/owl.carousel.js"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+		<script src="assets/js/jquery.nice-select.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+		<script src="assets/js/clamp.js"></script>
+		<script src="assets/js/custom.js"></script>
+	</head>
+	<body>
+		<div class="mainWrapper">
+			<!-- Header Section -->
+			<header class="">
+				<div class="topHead">
+					<div class="container-fluid">
+						<div class="thContent">
+							<ul class="d-flex flex-wrap align-items-center">
+								<li class="myAccount">
+									<div class="d-flex align-items-center">
+										<a href="#">Login</a>
+										<span>|</span>
+										<a href="#register.html">Register</a>
+									</div>
+									<!-- <div class="accountLogin" style="display: none;"><i class="fas fa-user-circle"></i> <span>Ashish</span></div> -->
+								</li>
+								<!-- <li class="growerAccount">
+									<a href="" class="">Register Growers</a>
+								</li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="mianHead">
+					<div class="container-fluid">
+						<nav class="navbar navbar-expand-md">
+							<a class="navbar-brand" href="#"><img src="assets/images/logo.png"></a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
+								<i class="fas fa-bars"></i>
+							</button>
+							<div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+								<ul class="navbar-nav navbar-right">
+									<li class="nav-item">
+										<a class="nav-link" href="#">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">About us</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+											Products
+										</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="#">Link 1</a>
+											<a class="dropdown-item" href="#">Link 2</a>
+											<a class="dropdown-item" href="#">Link 3</a>
+										</div>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Growers</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Contact</a>
+									</li>
+								</ul>
+							</div>
+							<!-- <div class="mhEcom d-flex">
+								<div class="mhWish"><a href="" class=""><i class="far fa-heart"></i> <span class="badge">0</span></a></div>
+								<div class="mhBag"><a href=""><i class="fas fa-shopping-bag"></i> <span class="badge">0</span></a></div>
+							</div> -->
+						</nav>
+					</div>
+				</div>
+			</header>
+			
+			<!-- Main body wrapper -->
+			<div class="mainBody">
+				<div class="msBreadcrumb">
+					<div class="container-fluid">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="#">Home</a></li>
+							<li class="breadcrumb-item active">Dashboard</li>
+						</ol>
+					</div>
+				</div>
+				<div class="userWrapper">
+					<div class="container-fluid">
+						<div class="cwContainer">
+							<div class="uwBox d-flex flex-wrap">
+								<div class="profileLt">
+									<div class="profileNav">
+										<a href="" class="profileNavToggle">ProfileMenu</a>
+										<ul class="nav nav-tabs flex-column">
+											<li class="nav-item"><a data-toggle="tab" href="#myProfile" class="nav-link active">Profile</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#editProfile" class="nav-link">Edit Profile</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#gwrStatement" class="nav-link">Statement</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#gwrAddItem" class="nav-link">Add Items</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#gwrFeedback" class="nav-link">Feedback</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#gwrHelp" class="nav-link">Help</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#gwrInquiry" class="nav-link">Inquiries</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#gwrMenu" class="nav-link">Menu</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#gwrPolicy" class="nav-link">Legal Privacy Policy</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#gwrRefer" class="nav-link">Referral</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="javascript:void(0);" class="nav-link">Logout</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="profileRt">
+									<div class="tab-content">
+
+										<div class="tab-pane fade" id="myProfile">
+											<div class="gwrProfileContainer">
+												<div class="gwrHead"><h5 class="dashTitle">Grower Profile</h5></div>
+												<div class="row">
+													<div class="col-lg-7">
+														<div class="gwrProfile">
+															<div class="gwrPfl d-flex">
+																<div class="gwrImg"><img src="assets/images/logo.png"></div>
+																<div class="gwrInfo">
+																	<div class="gwrName">Lisha Smith</div>
+																	<div class="userType">Grower</div>
+																	<ul>
+																		<li class="d-flex align-items-baseline">
+																			<i class="fas fa-envelope"></i>
+																			<span>lishasmith@example.com</span>
+																		</li>
+																		<li class="d-flex align-items-baseline">
+																			<i class="fas fa-mobile"></i>
+																			<span>+91 1234567890</span>
+																		</li>
+																		<li class="d-flex align-items-baseline">
+																			<i class="fas fa-map-marker-alt"></i>
+																			<span>123, Sector 63, H Block, Noida - 201301</span>
+																		</li>
+																	</ul>
+																	
+																</div>
+															</div>
+															<div class="gwrAbout">
+																<h5>About Us</h5>
+																<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+																proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+																<div class="gwrUrl">wwww.exampleabc.com</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-5">
+														<div class="gwrGallery">
+															<h5>Grower's Gallery</h5>
+															<ul class="d-flex flex-wrap">
+																<li><img src="assets/images/ad1.jpg"></li>
+																<li><img src="assets/images/ad1.jpg"></li>
+																<li><img src="assets/images/ad1.jpg"></li>
+																<li><img src="assets/images/ad1.jpg"></li>
+																<li><img src="assets/images/ad1.jpg"></li>
+																<li><img src="assets/images/ad1.jpg"></li>
+															</ul>
+															<div class="text-right"><a href="">View All</a></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="tab-pane fade" id="editProfile">
+										</div>
+
+										<div class="tab-pane fade" id="gwrAddItem">
+											<div class="gwrAddItemContainer">
+												<div class="gwrHead"><h5 class="dashTitle">Add Items</h5></div>
+												<div class="gwrAddItem">
+													<form>
+														<div class="row">
+															<div class="col-sm-6 form-group">
+																<label>Item Name</label>
+																<input type="text" class="form-control" placeholder="Wheat" name="">
+															</div>
+															<div class="col-sm-6 form-group">
+																<label>Category</label>
+																<select class="form-control">
+																	<option>Crop</option>
+																	<option>Crop 1</option>
+																	<option>Crop 2</option>
+																</select>
+															</div>
+															<div class="col-sm-6 form-group">
+																<label>Measuring Unit</label>
+																<select class="form-control">
+																	<option>Kilo Gram</option>
+																	<option>Kilo Gram 1</option>
+																	<option>Kilo Gram 2</option>
+																</select>
+															</div>
+															<div class="col-sm-6 form-group">
+																<label>Quantity</label>
+																<input type="text" class="form-control" placeholder="100" name="">
+															</div>
+															<div class="col-sm-6 form-group">
+																<label>Quality</label>
+																<select class="form-control">
+																	<option>A</option>
+																	<option>A 1</option>
+																	<option>A 2</option>
+																</select>
+															</div>
+															<div class="col-sm-6 form-group">
+																<label>Maturity Date</label>
+																<div class="input-group">
+																	<input type="text" class="maturityDate form-control" name="" id="maturityDate">
+																	<div class="input-group-append"><span class="input-group-text"><i class="fas fa-calendar-alt"></i></span></div>
+																</div>
+															</div>
+															<div class="col-sm-6 form-group">
+																<label>Landmarks</label>
+																<input type="text" class="form-control" placeholder="H-51, Sector 63, Noida" name="">
+															</div>
+															<div class="col-sm-6 form-group">
+																<label>Price</label>
+																<input type="text" class="form-control" placeholder="#199" name="">
+															</div>
+															<div class="col-sm-6 form-group">
+																<label>Product Picture</label>
+																<div class="input-group">
+																	<input type="file" class="form-control" name="">
+																	<div class="input-group-append"><button class="btn">Upload</button></div>
+																</div>
+															</div>
+														</div>
+														<div class="gwrBtns">
+															<button class="btn ">Add Product</button>
+															<button class="btn ">Add More</button>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+
+										<div class="tab-pane fade" id="gwrFeedback">
+											<div class="gwrFeedbackContainer">
+												<div class="gwrHead"><h5 class="dashTitle">Feedback</h5></div>
+												<div class="gwrFeedback">
+													<div class="feedSummary">
+														<div class="d-flex justify-content-between flex-wrap">
+															<div class="d-flex align-items-baseline">
+																<div class="starDisplay">
+																	<span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+																</div>
+																<h4><strong>3.2/<small>5</small></strong></h4>
+															</div>
+															<h4><strong>7 Ratings</strong></h4>
+														</div>
+													</div>
+													<div class="feedComment">Comments</div>
+													<ul>
+														<li class="d-flex">
+															<div class="feedImg">
+																<div><img src="assets/images/logo.png"></div>
+															</div>
+															<div class="feedDesc">
+																<div class="d-flex flex-wrap mb-2">
+																	<div class="feedName">
+																		<h5>John Smith</h5>
+																		<p>July 22, 2019 04:00 PM</p>
+																	</div>
+																	<div class="starDisplay ml-auto">
+																		<span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+																	</div>
+																</div>
+																<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+																proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+															</div>
+														</li>
+														<li class="d-flex">
+															<div class="feedImg">
+																<div><img src="assets/images/logo.png"></div>
+															</div>
+															<div class="feedDesc">
+																<div class="d-flex flex-wrap mb-2">
+																	<div class="feedName">
+																		<h5>John Smith</h5>
+																		<p>July 22, 2019 04:00 PM</p>
+																	</div>
+																	<div class="starDisplay ml-auto">
+																		<span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+																	</div>
+																</div>
+																<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+																proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+															</div>
+														</li>
+														<li class="d-flex">
+															<div class="feedImg">
+																<div><img src="assets/images/logo.png"></div>
+															</div>
+															<div class="feedDesc">
+																<div class="d-flex flex-wrap mb-2">
+																	<div class="feedName">
+																		<h5>John Smith</h5>
+																		<p>July 22, 2019 04:00 PM</p>
+																	</div>
+																	<div class="starDisplay ml-auto">
+																		<span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+																	</div>
+																</div>
+																<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+																proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="tab-pane fade" id="gwrHelp">
+											<div class="gwrHelpContainer">
+												<div class="gwrHead"><h5 class="dashTitle">Help</h5></div>
+												<div class="gwrHelpSearch">
+													<div class="input-group">
+														<input type="text" class="form-control" name="">
+														<div class="input-group-append"><button class="btn"><i class="fas fa-search"></i></button></div>
+													</div>
+												</div>
+												<div class="gwrHelp">
+													<ul class="" id="faqAccordion">
+														<li class="card">
+															<div class="card-header">
+																<a class="faqLink" data-toggle="collapse" href="#faqOne">
+																	Setting up your account
+																</a>
+															</div>
+															<div id="faqOne" class="collapse" data-parent="#faqAccordion">
+																<div class="card-body">
+																	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+																	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+																</div>
+															</div>
+														</li>
+														<li class="card">
+															<div class="card-header">
+																<a class="faqLink" data-toggle="collapse" href="#faqTwo">
+																	Share files and folder
+																</a>
+															</div>
+															<div id="faqTwo" class="collapse" data-parent="#faqAccordion">
+																<div class="card-body">
+																	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+																	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+																</div>
+															</div>
+														</li>
+														<li class="card">
+															<div class="card-header">
+																<a class="faqLink" data-toggle="collapse" href="#faqThree">
+																	Edit your profile picture and username
+																</a>
+															</div>
+															<div id="faqThree" class="collapse" data-parent="#faqAccordion">
+																<div class="card-body">
+																	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+																	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+																</div>
+															</div>
+														</li>
+														<li class="card">
+															<div class="card-header">
+																<a class="faqLink" data-toggle="collapse" href="#faqFour">
+																	Restoring deleted files and username
+																</a>
+															</div>
+															<div id="faqFour" class="collapse" data-parent="#faqAccordion">
+																<div class="card-body">
+																	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+																	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+																</div>
+															</div>
+														</li>
+														<li class="card">
+															<div class="card-header">
+																<a class="faqLink" data-toggle="collapse" href="#faqFive">
+																	How do i merged an existing legancy my account
+																</a>
+															</div>
+															<div id="faqFive" class="collapse" data-parent="#faqAccordion">
+																<div class="card-body">
+																	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+																	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+																</div>
+															</div>
+														</li>
+														
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="tab-pane fade" id="gwrInquiry">
+											<div class="gwrInqContainer">
+												<div class="gwrHead"><h5 class="dashTitle">Inquiries</h5></div>
+												<div class="gwrHelpSearch">
+													<div class="input-group">
+														<input type="text" class="form-control" name="">
+														<div class="input-group-append"><button class="btn"><i class="fas fa-search"></i></button></div>
+													</div>
+												</div>
+												<div class="gwrInquiry">
+													<div class="dvrInqHead d-flex align-items-center">
+														<ul class="nav nav-pills">
+															<li class="nav-item"><a href="#inqReceived" class="nav-link active" data-toggle="pill">Received</a></li>
+															<li class="nav-item"><a href="#inqSend" class="nav-link" data-toggle="pill">Send</a></li>
+														</ul>
+														<!-- <div class="dvrInqFilter">
+															<a href="" class="btn">Received</a>
+															<a href="" class="btn">Send</a>
+														</div> -->
+														<div class="dvrInqResult">
+															<strong>321</strong>&nbsp;<span>Inquiries</span>
+														</div>
+													</div>
+													<div class="tab-content dvrInqBody">
+														<div class="tab-pane active" id="inqReceived">
+															<div class="row">
+
+																<div class="col-md-6">
+																	<div class="dvrInqItem p-3">
+																		<div class="manageAction">
+																			<a href=""><i class="fas fa-ellipsis-v"></i></a>
+																			<div class="dropAction">
+																				<a href="">Reply</a>
+																			</div>
+																		</div>
+																		<div class="d-flex mb-2">
+																			<div class="prImg"><img src="assets/images/logo.png"></div>
+																			<div class="prDesc">
+																				<div class="prName">Woodland Agrre Farm</div>
+																				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm incid</p>
+																			</div>
+																		</div>
+																		<div class="dvrInqFrom">
+																			<p><span>3</span> Inquiries</p>
+																			<ul class="d-flex flex-wrap">
+																				<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																				<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																				<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="col-md-6">
+																	<div class="dvrInqItem p-3">
+																		<div class="manageAction">
+																			<a href=""><i class="fas fa-ellipsis-v"></i></a>
+																			<div class="dropAction">
+																				<a href="">Reply</a>
+																			</div>
+																		</div>
+																		<div class="d-flex mb-2">
+																			<div class="prImg"><img src="assets/images/logo.png"></div>
+																			<div class="prDesc">
+																				<div class="prName">Woodland Agrre Farm</div>
+																				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm incid</p>
+																			</div>
+																		</div>
+																		<div class="dvrInqFrom">
+																			<p><span>3</span> Inquiries</p>
+																			<ul class="d-flex flex-wrap">
+																				<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																				<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																				<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="col-md-6">
+																	<div class="dvrInqItem p-3">
+																		<div class="manageAction">
+																			<a href=""><i class="fas fa-ellipsis-v"></i></a>
+																			<div class="dropAction">
+																				<a href="">Reply</a>
+																			</div>
+																		</div>
+																		<div class="d-flex mb-2">
+																			<div class="prImg"><img src="assets/images/logo.png"></div>
+																			<div class="prDesc">
+																				<div class="prName">Woodland Agrre Farm</div>
+																				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm incid</p>
+																			</div>
+																		</div>
+																		<div class="dvrInqFrom">
+																			<p><span>3</span> Inquiries</p>
+																			<ul class="d-flex flex-wrap">
+																				<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																				<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																				<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="col-md-6">
+																	<div class="dvrInqItem p-3">
+																		<div class="manageAction">
+																			<a href=""><i class="fas fa-ellipsis-v"></i></a>
+																			<div class="dropAction">
+																				<a href="">Reply</a>
+																			</div>
+																		</div>
+																		<div class="d-flex mb-2">
+																			<div class="prImg"><img src="assets/images/logo.png"></div>
+																			<div class="prDesc">
+																				<div class="prName">Woodland Agrre Farm</div>
+																				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm incid</p>
+																			</div>
+																		</div>
+																		<div class="dvrInqFrom">
+																			<p><span>3</span> Inquiries</p>
+																			<ul class="d-flex flex-wrap">
+																				<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																				<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																				<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+
+															</div>
+														</div>
+														<div class="tab-pane active" id="inqSend">
+															<div class="row">
+																<div class="col-md-6">
+																	<div class="dvrInqItem p-3">
+																		<div class="manageAction">
+																			<a href=""><i class="fas fa-ellipsis-v"></i></a>
+																			<div class="dropAction">
+																				<a href="">Reply</a>
+																			</div>
+																		</div>
+																		<div class="d-flex mb-2">
+																			<div class="prImg"><img src="assets/images/logo.png"></div>
+																			<div class="prDesc">
+																				<div class="prName">Woodland Agrre Farm</div>
+																				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm incid</p>
+																			</div>
+																		</div>
+																		<div class="dvrInqFrom">
+																			<p><span>3</span> Inquiries</p>
+																			<ul class="d-flex flex-wrap">
+																				<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																				<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																				<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-md-6">
+																	<div class="dvrInqItem p-3">
+																		<div class="manageAction">
+																			<a href=""><i class="fas fa-ellipsis-v"></i></a>
+																			<div class="dropAction">
+																				<a href="">Reply</a>
+																			</div>
+																		</div>
+																		<div class="d-flex mb-2">
+																			<div class="prImg"><img src="assets/images/logo.png"></div>
+																			<div class="prDesc">
+																				<div class="prName">Woodland Agrre Farm</div>
+																				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm incid</p>
+																			</div>
+																		</div>
+																		<div class="dvrInqFrom">
+																			<p><span>3</span> Inquiries</p>
+																			<ul class="d-flex flex-wrap">
+																				<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																				<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																				<li><div class="fromImg"><img src="assets/images/logo.png"></div></li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="tab-pane fade" id="gwrMenu">
+											<div class="gwrMenu">
+												<div class="gwrHead"><h5 class="dashTitle">Indian Agri Menu</h5></div>
+												<div class="row">
+													<div class="col-lg-4 col-sm-6">
+														<div class="gwrMenuCard gwrM1">
+															<div class="gwrMenuHead">
+																<h5 class="">Crop</h5>
+															</div>
+															<div class="gwrMenuBody">
+																<ul class="gwrMenuList">
+																	<li class="d-flex"><span>Wheat</span> <strong>$199</strong></li>
+																	<li class="d-flex"><span>Rice</span> <strong>$198</strong></li>
+																	<li class="d-flex"><span>Corn</span> <strong>$321</strong></li>
+																	<li class="d-flex"><span>Pulse</span> <strong>$99</strong></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-lg-4 col-sm-6">
+														<div class="gwrMenuCard gwrM2">
+															<div class="gwrMenuHead">
+																<h5 class="">Fruits</h5>
+															</div>
+															<div class="gwrMenuBody">
+																<ul class="gwrMenuList">
+																	<li class="d-flex"><span>Wheat</span> <strong>$199</strong></li>
+																	<li class="d-flex"><span>Rice</span> <strong>$198</strong></li>
+																	<li class="d-flex"><span>Corn</span> <strong>$321</strong></li>
+																	<li class="d-flex"><span>Pulse</span> <strong>$99</strong></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-lg-4 col-sm-6">
+														<div class="gwrMenuCard gwrM3">
+															<div class="gwrMenuHead">
+																<h5 class="">Fresh Vegetables</h5>
+															</div>
+															<div class="gwrMenuBody">
+																<ul class="gwrMenuList">
+																	<li class="d-flex"><span>Wheat</span> <strong>$199</strong></li>
+																	<li class="d-flex"><span>Rice</span> <strong>$198</strong></li>
+																	<li class="d-flex"><span>Corn</span> <strong>$321</strong></li>
+																	<li class="d-flex"><span>Pulse</span> <strong>$99</strong></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+
+										<div class="tab-pane fade" id="gwrPolicy">
+											<div class="gwrPolicyContainer">
+												<div class="gwrHead"><h5 class="dashTitle">Indian Agri Menu</h5></div>
+												<div class="gwrPolicy">
+													<h5>Privacy Agreement</h5>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+													tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+													quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+													consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+													cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+													proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+													<h5>General Terms</h5>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+													tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+													quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+													consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+													cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+													proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+													<h5>Personal Data</h5>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+													tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+													quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+													consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+													cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidata.</p>
+												</div>
+											</div>
+										</div>
+										
+										<div class="tab-pane fade" id="gwrRefer">
+											<div class="gwrRefer">
+												<div class="gwrHead"><h5 class="dashTitle">Refer to friends</h5></div>
+												<div class="row">
+													<div class="col-sm-5">
+														<div class="referImg"><img src="assets/images/referimg.jpg"></div>
+													</div>
+													<div class="col-sm-7">
+														<div class="referText">
+															<h5>Refer to friend</h5>
+															<p>We also delighted you're here!</p>
+															<div class="referCodeBox d-flex align-items-center">
+																<div class="referLabel">Share your code</div>
+																<div class="referCode">MSJK45KJ</div>
+															</div>
+															<h6>Share your friend by using these</h6>
+															<ul class="referSocial d-flex">
+																<li><a href="" class="fb"><i class="fab fa-facebook-f"></i> <span>Facebook</span></a></li>
+																<li><a href="" class="tw"><i class="fab fa-twitter"></i> <span>Twitter</span></a></li>
+																<li><a href="" class="gp"><i class="fab fa-google-plus-g"></i> <span>Google+</span></a></li>
+																<li><a href="" class="mg"><i class="fas fa-envelope"></i> <span>Email</span></a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="tab-pane active" id="gwrStatement">
+											<div class="gwrStatement">
+												<div class="gwrHead"><h5 class="dashTitle">Indian agri Statement</h5></div>
+												<div class="balanceHead d-flex">
+													<i class="fas fa-wallet"></i>
+													<div class="balanceText">
+														<strong>14999</strong>
+														<p>Current Balance</p>
+													</div>
+												</div>
+
+												<div class="statementTable">
+													<table class="table">
+														<thead class="text-nowrap">
+															<tr>
+																<th>Date</th>
+																<th>Description</th>
+																<th>Payment Mode</th>
+																<th>Amount</th>
+																<th>Status</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="text-nowrap">20-04-2018</td>
+																<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven.</td>
+																<td>Cash</td>
+																<td>$189</td>
+																<td>Completed</td>
+															</tr>
+															<tr>
+																<td>20-04-2018</td>
+																<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven.</td>
+																<td>Cash</td>
+																<td>$189</td>
+																<td>Completed</td>
+															</tr>
+															<tr>
+																<td>20-04-2018</td>
+																<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven.</td>
+																<td>Cash</td>
+																<td>$189</td>
+																<td>Completed</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Subscribe section -->
+			<div class="subscribe">
+				<div class="container-fluid">
+					<div class="scContainer d-flex flex-wrap">
+						<div class="sc1">
+							<h5>Sign up to newsletter</h5>
+							<p>Register now to get updates on promotions & coupons.</p>
+						</div>
+						<div class="sc2">
+							<div class="input-group">
+								<input type="email" class="form-control" name="" placeholder="Email address">
+								<div class="input-group-addon"><span class="input-group-text">Subscribe</span></div>
+							</div>
+						</div>
+						<div class="sc3">
+							<div class="d-flex scSocial">
+								<a href=""><i class="fab fa-facebook-f"></i></a>
+								<a href=""><i class="fab fa-twitter"></i></a>
+								<a href=""><i class="fab fa-pinterest"></i></a>
+								<a href=""><i class="fab fa-linkedin-in"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Footer Section -->
+			<footer>
+				<div class="footTop">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="footContent footContact">
+									<a href="" class="footLogo"><img src="assets/images/logo.png"></a>
+									<div class="footCall d-flex">
+										<img src="assets/images/support.png">
+										<div>
+											<label>Call us toll free</label>
+											<span>(+123) 456 789 or (+123) 666 888</span>
+										</div>
+									</div>
+									<div class="footInfo">
+										<strong>Contact Info:</strong>
+										<p>1234-C, Fake Street, Abc Block, Noida - 201301</p>
+									</div>
+									<div class="footInfo">
+										<strong>Contact Info:</strong>
+										<p>info@mahaseel.com</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-6">
+								<div class="footContent footLink">
+									<h5>Products</h5>
+									<ul>
+										<li><a href="">Agro Products</a></li>
+										<li><a href="">Fruits</a></li>
+										<li><a href="">Vegetables</a></li>
+										<li><a href="">Crops</a></li>
+										<li><a href="">Flowers</a></li>
+										<li><a href="">Seeds</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 col-6">
+								<div class="footContent footLink">
+									<h5>Quick Links</h5>
+									<ul>
+										<li><a href="">About Us</a></li>
+										<li><a href="">Best Sales</a></li>
+										<li><a href="">Stores</a></li>
+										<li><a href="">Vendors</a></li>
+										<li><a href="">Products</a></li>
+										<li><a href="">Sitemap</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footMiddle">
+					<div class="container-fluid">
+						<div class="footPolicy">
+							<ul class="d-flex flex-wrap justify-content-center">
+								<li class="d-flex align-items-center">
+									<div class="mspIcon"><img src="assets/images/f-icon1.png"></div>
+									<div class="mspText">
+										<p>Over 500,000 Products</p>
+									</div>
+								</li>
+								<li class="d-flex align-items-center">
+									<div class="mspIcon"><img src="assets/images/f-icon2.png"></div>
+									<div class="mspText">
+										<p>Best Bang For Your Buck</p>
+									</div>
+								</li>
+								<li class="d-flex align-items-center">
+									<div class="mspIcon"><img src="assets/images/f-icon3.png"></div>
+									<div class="mspText">
+										<p>Professional Customer Service</p>
+									</div>
+								</li>
+								<li class="d-flex align-items-center">
+									<div class="mspIcon"><img src="assets/images/f-icon4.png"></div>
+									<div class="mspText">
+										<p>Free Or Low Cost Shipping</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="fmText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</div>
+						<div class="payMethod d-flex justify-content-center">
+							<div class="payImg"><img src="assets/images/pay-img.jpg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="footBottom">
+					<div class="container-fluid">
+						<div class="footCopy text-center">&copy; <a href="">Mahaseel</a> 2019. All Rights Reserved.</div>
+					</div>
+				</div>
+			</footer>
+			<div class="scroll-top not-visible"><i class="fas fa-angle-up"></i></div>
+		</div>
+		<script>
+			$(function(){
+
+				/*-------- scroll to top start --------*/
+				$(window).on('scroll', function () {
+					if ($(this).scrollTop() > 600) {
+						$('.scroll-top').removeClass('not-visible');
+					} else {
+						$('.scroll-top').addClass('not-visible');
+					}
+				});
+				$('.scroll-top').on('click', function (event) {
+					$('html,body').animate({
+						scrollTop: 0
+					}, 1000);
+				});
+				/*-------- scroll to top end --------*/
+
+				$('#maturityDate').datepicker();
+
+				$('.proSlide1').owlCarousel({
+					nav: true, dots: false, loop: true, autoplay: true, responsive: {
+						0: { items: 1 },
+						640: { items: 2 },
+						800: { items: 3 },
+						1000: { items: 4 }
+					}
+				});
+				$('.proSlide2').owlCarousel({
+					nav: true, dots: false, loop: true, autoplay: true, margin:30, responsive: {
+						0: { items: 1 },
+						640: { items: 2 },
+						800: { items: 3 },
+						1000: { items: 4 }
+					}
+				});
+				$('.msLogoSlide').owlCarousel({
+					nav: false, dots: false, loop: true, autoplay: true, margin:30, responsive: {
+						0: { items: 2 },
+						640: { items: 3 },
+						800: { items: 4 },
+						1000: { items: 5 }
+					}
+				});
+				$('.proSlide3').owlCarousel({
+					nav: true, dots: false, loop: true, autoplay: true, margin:30, responsive: {
+						0: { items: 1 },
+						640: { items: 2 },
+						1000: { items: 3 }
+					}
+				});
+			});
+
+		</script>
+	</body>
+</html>

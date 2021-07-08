@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?8r1u5b');
+  src:  url('../fonts/icomoon.eot?8r1u5b#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?8r1u5b') format('truetype'),
+    url('../fonts/icomoon.woff?8r1u5b') format('woff'),
+    url('../fonts/icomoon.svg?8r1u5b#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user:before {
+  content: "\e900";
+}
+.icon-car:before {
+  content: "\e901";
+}
+.icon-location:before {
+  content: "\e902";
+}
+.icon-share:before {
+  content: "\e903";
+}
+.icon-route:before {
+  content: "\e904";
+}
+.icon-map-location:before {
+  content: "\e905";
+}
+.icon-address:before {
+  content: "\e906";
+}
+.icon-online-payment:before {
+  content: "\e907";
+}
+.icon-pay:before {
+  content: "\e908";
+}
+.icon-price-tag:before {
+  content: "\e909";
+}
+.icon-tag:before {
+  content: "\e90a";
+}
+.icon-internet:before {
+  content: "\e90b";
+}
+.icon-like:before {
+  content: "\e90c";
+}
+.icon-volkswagen-car-side-view:before {
+  content: "\e90d";
+}
+.icon-sedan-car-model:before {
+  content: "\e90e";
+}
+.icon-car-1:before {
+  content: "\e90f";
+}
+.icon-left-quote:before {
+  content: "\e910";
+}
+.icon-mail:before {
+  content: "\e911";
+}
+.icon-phone-receiver:before {
+  content: "\e912";
+}
+.icon-sent-mail:before {
+  content: "\e913";
+}
